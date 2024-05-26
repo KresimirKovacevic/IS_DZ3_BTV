@@ -1,0 +1,227 @@
+USE [master]
+GO
+
+DROP DATABASE IF EXISTS [BTVdb]
+
+CREATE DATABASE [BTVdb]
+GO
+
+USE [BTVdb]
+GO
+
+CREATE TABLE Phylum_t
+(
+  ID INT IDENTITY(1,1),
+  Name VARCHAR(20) NOT NULL,
+  PRIMARY KEY (ID),
+  UNIQUE (Name)
+);
+
+CREATE TABLE Class_T
+(
+  ID INT IDENTITY(1,1),
+  Name VARCHAR(20) NOT NULL,
+  PRIMARY KEY (ID),
+  UNIQUE (Name)
+);
+
+CREATE TABLE Order_t
+(
+  ID INT IDENTITY(1,1),
+  Name VARCHAR(20) NOT NULL,
+  PRIMARY KEY (ID),
+  UNIQUE (Name)
+);
+
+CREATE TABLE Family_t
+(
+  ID INT IDENTITY(1,1),
+  Name VARCHAR(20) NOT NULL,
+  PRIMARY KEY (ID),
+  UNIQUE (Name)
+);
+
+CREATE TABLE Genus_t
+(
+  ID INT IDENTITY(1,1),
+  Name VARCHAR(20) NOT NULL,
+  PRIMARY KEY (ID),
+  UNIQUE (Name)
+);
+
+CREATE TABLE Species_t
+(
+  ID INT IDENTITY(1,1),
+  Name VARCHAR(20) NOT NULL,
+  Description VARCHAR(300) NOT NULL,
+  Care VARCHAR(800) NOT NULL,
+  PRIMARY KEY (ID),
+  UNIQUE (Name)
+);
+
+CREATE TABLE Kingdom_t
+(
+  ID INT IDENTITY(1,1),
+  Name VARCHAR(20) NOT NULL,
+  PRIMARY KEY (ID),
+  UNIQUE (Name)
+);
+
+CREATE TABLE Person
+(
+  ID INT IDENTITY(1,1),
+  Name VARCHAR(20),
+  Surname VARCHAR(20),
+  PRIMARY KEY (ID)
+);
+
+CREATE TABLE Guest
+(
+  Visit_date DATE NOT NULL,
+  ID_Person INT NOT NULL,
+  PRIMARY KEY (Visit_date, ID_Person),
+  FOREIGN KEY (ID_Person) REFERENCES Person(ID)
+);
+
+CREATE TABLE Department
+(
+  ID INT IDENTITY(1,1),
+  Name VARCHAR(100) NOT NULL,
+  Location VARCHAR(100) NOT NULL,
+  PRIMARY KEY (ID)
+);
+
+CREATE TABLE Location
+(
+  ID INT IDENTITY(1,1),
+  Polygon VARCHAR(1000) NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  PRIMARY KEY (ID)
+);
+
+CREATE TABLE Sublocations
+(
+  ID_Parent INT NOT NULL,
+  ID_Child INT NOT NULL,
+  PRIMARY KEY (ID_Child),
+  FOREIGN KEY (ID_Parent) REFERENCES Location(ID),
+  FOREIGN KEY (ID_Child) REFERENCES Location(ID)
+);
+
+CREATE TABLE Subdepartments
+(
+  ID_Parent INT NOT NULL,
+  ID_Child INT NOT NULL,
+  PRIMARY KEY (ID_Child),
+  FOREIGN KEY (ID_Parent) REFERENCES Department(ID),
+  FOREIGN KEY (ID_Child) REFERENCES Department(ID)
+);
+
+CREATE TABLE Phy_Kin
+(
+  ID_Phy INT NOT NULL,
+  ID_Kin INT NOT NULL,
+  PRIMARY KEY (ID_Phy),
+  FOREIGN KEY (ID_Phy) REFERENCES Phylum_t(ID),
+  FOREIGN KEY (ID_Kin) REFERENCES Kingdom_t(ID)
+);
+
+CREATE TABLE Cla_Phy
+(
+  ID_Cla INT NOT NULL,
+  ID_Phy INT NOT NULL,
+  PRIMARY KEY (ID_Cla),
+  FOREIGN KEY (ID_Cla) REFERENCES Class_t(ID),
+  FOREIGN KEY (ID_Phy) REFERENCES Phylum_t(ID)
+);
+
+CREATE TABLE Ord_Cla
+(
+  ID_Ord INT NOT NULL,
+  ID_Cla INT NOT NULL,
+  PRIMARY KEY (ID_Ord),
+  FOREIGN KEY (ID_Ord) REFERENCES Order_t(ID),
+  FOREIGN KEY (ID_Cla) REFERENCES Class_t(ID)
+);
+
+CREATE TABLE Fam_Ord
+(
+  ID_Fam INT NOT NULL,
+  ID_Ord INT NOT NULL,
+  PRIMARY KEY (ID_Fam),
+  FOREIGN KEY (ID_Fam) REFERENCES Family_t(ID),
+  FOREIGN KEY (ID_Ord) REFERENCES Order_t(ID)
+);
+
+CREATE TABLE Gen_Fam
+(
+  ID_Gen INT NOT NULL,
+  ID_Fam INT NOT NULL,
+  PRIMARY KEY (ID_Gen),
+  FOREIGN KEY (ID_Gen) REFERENCES Genus_t(ID),
+  FOREIGN KEY (ID_Fam) REFERENCES Family_t(ID)
+);
+
+CREATE TABLE Spe_Gen
+(
+  ID_Spe INT NOT NULL,
+  ID_Gen INT NOT NULL,
+  PRIMARY KEY (ID_Spe),
+  FOREIGN KEY (ID_Spe) REFERENCES Species_t(ID),
+  FOREIGN KEY (ID_Gen) REFERENCES Genus_t(ID)
+);
+
+CREATE TABLE Sensor
+(
+  ID INT IDENTITY(1,1),
+  Type CHAR(1) NOT NULL,
+  Location VARCHAR(100) NOT NULL,
+  PRIMARY KEY (ID)
+);
+
+CREATE TABLE Individual
+(
+  ID INT IDENTITY(1,1),
+  Notes VARCHAR(200) NOT NULL,
+  Health CHAR(3) NOT NULL,
+  Location VARCHAR(100) NOT NULL,
+  ID_Species INT NOT NULL,
+  ID_Location INT NOT NULL,
+  ID_Kingdom INT NOT NULL,
+  ID_Sensor INT,
+  PRIMARY KEY (ID),
+  FOREIGN KEY (ID_Species) REFERENCES Species_t(ID),
+  FOREIGN KEY (ID_Location) REFERENCES Location(ID),
+  FOREIGN KEY (ID_Kingdom) REFERENCES Kingdom_t(ID),
+  FOREIGN KEY (ID_Sensor) REFERENCES Sensor(ID)
+);
+
+CREATE TABLE Worker
+(
+  ID INT IDENTITY(1,1),
+  Role VARCHAR(100) NOT NULL,
+  Hire_date DATE NOT NULL,
+  End_date DATE,
+  ID_Person INT NOT NULL,
+  ID_Department INT NOT NULL,
+  PRIMARY KEY (ID),
+  FOREIGN KEY (ID_Person) REFERENCES Person(ID),
+  FOREIGN KEY (ID_Department) REFERENCES Department(ID)
+);
+
+CREATE TABLE Assignment
+(
+  ID INT IDENTITY(1,1),
+  Task VARCHAR(50) NOT NULL,
+  Description VARCHAR(300),
+  Start_date DATE NOT NULL,
+  End_date DATE NOT NULL,
+  Status VARCHAR(20) NOT NULL,
+  ID_Individual INT NOT NULL,
+  ID_Worker INT NOT NULL,
+  ID_Assigner INT NOT NULL,
+  PRIMARY KEY (ID),
+  FOREIGN KEY (ID_Individual) REFERENCES Individual(ID),
+  FOREIGN KEY (ID_Worker) REFERENCES Person(ID),
+  FOREIGN KEY (ID_Assigner) REFERENCES Person(ID)
+);

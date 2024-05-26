@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UpravljanjeProjektimaStoreContainer" CdmEntityContainer="ProjektDataContext">
+    <EntitySetMapping Name="Osoba">
+      <EntityTypeMapping TypeName="UpravljanjeProjektima.Dal.Osoba">
+        <MappingFragment StoreEntitySet="Osoba">
+          <ScalarProperty Name="IdOsobe" ColumnName="IdOsobe" />
+          <ScalarProperty Name="PrezimeOsobe" ColumnName="PrezimeOsobe" />
+          <ScalarProperty Name="ImeOsobe" ColumnName="ImeOsobe" />
+          <ScalarProperty Name="OIB" ColumnName="OIB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projekt">
+      <EntityTypeMapping TypeName="UpravljanjeProjektima.Dal.Projekt">
+        <MappingFragment StoreEntitySet="Projekt">
+          <ScalarProperty Name="SifProjekta" ColumnName="SifProjekta" />
+          <ScalarProperty Name="NazProjekta" ColumnName="NazProjekta" />
+          <ScalarProperty Name="OpisProjekta" ColumnName="OpisProjekta" />
+          <ScalarProperty Name="DatPocetka" ColumnName="DatPocetka" />
+          <ScalarProperty Name="DatZavrsetka" ColumnName="DatZavrsetka" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uloga">
+      <EntityTypeMapping TypeName="UpravljanjeProjektima.Dal.Uloga">
+        <MappingFragment StoreEntitySet="Uloga">
+          <ScalarProperty Name="IdUloge" ColumnName="IdUloge" />
+          <ScalarProperty Name="NazUloge" ColumnName="NazUloge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UlogaOsobe">
+      <EntityTypeMapping TypeName="UpravljanjeProjektima.Dal.UlogaOsobe">
+        <MappingFragment StoreEntitySet="UlogaOsobe">
+          <ScalarProperty Name="SifProjekta" ColumnName="SifProjekta" />
+          <ScalarProperty Name="IdOsobe" ColumnName="IdOsobe" />
+          <ScalarProperty Name="IdUloge" ColumnName="IdUloge" />
+          <ScalarProperty Name="DatDodjele" ColumnName="DatDodjele" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

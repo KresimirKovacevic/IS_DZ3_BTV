@@ -1,0 +1,82 @@
+﻿@model UpravljanjeProjektima.ProjektOsobeList
+	
+@{			 
+	UpravljanjeProjektima.UlogaList listaUloga = UpravljanjeProjektima.UlogaList.Get();
+}
+
+@if (false)
+{			
+			<script src="../../Scripts/jquery-1.5.1-vsdoc.js" type="text/javascript"></script>
+}
+
+<table class="tablica">
+    <tr>        
+        <th>
+            Naziv projekta
+        </th>        
+				<th>
+            Datum dodjele uloge
+        </th>
+				<th>
+            Uloga
+        </th>
+				<th></th>
+    </tr>
+		
+
+@foreach(var item in Model)
+{
+    <tr>				        
+				<td>
+					@*@item.NazProjekta*@
+          @Html.ActionLink(item.NazProjekta, "Details", "Projekt", new { SifProjekta = item.SifProjekta }, null)
+				</td>
+				<td>
+					@item.DatDodjeleUloge.ToString("dd.MM.yyyy.")
+				</td>
+				<td>															
+					@Html.DropDownList("uloga", new SelectList(listaUloga, "Key", "Value", item.IdUloge),
+									new { @class = "ddlUloga", data_sifprojekta =item.SifProjekta, data_idosobe = ViewData["IdOsobe"] }
+					)	
+					<span class="rezultat"></span>
+				</td>               
+				<td>            
+						@using (Html.BeginForm("UkloniProjekt", "Osoba", new { SifProjekta = item.SifProjekta, IdOsobe = ViewData["IdOsobe"] }))
+						{
+								<a class="delete">Obriši</a>          
+						}
+        </td>
+    </tr>
+}
+
+</table>
+
+<script type="text/javascript" language="javascript">
+	$(function () {
+		$('.ddlUloga').each(function () {
+			$(this).change(function () {
+				var span = $(this).parent().find(".rezultat").first();
+				promijeniUlogu($(this).val(), $(this).data('sifprojekta'), $(this).data('idosobe'), span);
+			}
+				);
+		}
+		);
+	}
+	);
+
+	//ajax post zahtjev na controller
+	function promijeniUlogu(iduloge, sifprojekta, idosobe, span) {
+		$.post(appRoot + "Osoba/PromijeniUlogu",
+					{ IdUloge: iduloge, SifProjekta: sifprojekta, IdOsobe: idosobe },
+					function (data) {
+						$(span).html('').fadeIn();
+						if (data == 'OK') {
+							$(span).html(data).fadeOut(1000);
+						}
+						else {
+							$(span).html(data);
+						}
+					}
+		);
+	}
+</script>

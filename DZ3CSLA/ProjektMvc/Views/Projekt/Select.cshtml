@@ -1,0 +1,28 @@
+﻿@model IEnumerable<UpravljanjeProjektima.ProjektInfo>
+
+@{
+    ViewBag.Title = "Odabir projekta";
+}
+
+<table class="tablica">
+    <tr>        
+        <th>
+            Projekt
+        </th>        
+				<th></th>
+    </tr>
+
+		@foreach (var item in Model) {
+    <tr>				        
+        <td>
+					 @item.NazProjekta
+        </td>       
+				<td>            
+						@Html.ActionLink("Dodaj na ovaj projekt", "DodijeliProjekt", "Osoba", new { IdOsobe = ViewData["IdOsobe"], SifProjekta = item.SifProjekta }, null)
+        </td>
+    </tr>
+}
+</table>
+<p>
+@Html.ActionLink("Povratak", "Details", "Osoba", new { IdOsobe = ViewData["IdOsobe"]}, null)
+</p>

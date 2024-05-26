@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UpravljanjeProjektima.Admin.Uloga">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <Members>
+      <Method Name="AddBusinessRules" Hidden="true" />
+      <Method Name="Child_DeleteSelf" Hidden="true" />
+      <Method Name="Child_Fetch" Hidden="true" />
+      <Method Name="Child_Insert" Hidden="true" />
+      <Method Name="Child_Update" Hidden="true" />
+      <Method Name="GetMax" Hidden="true" />
+      <Field Name="idSet" Hidden="true" />
+      <Field Name="IdUlogeProperty" Hidden="true" />
+      <Method Name="Load" Hidden="true" />
+      <Field Name="NazUlogeProperty" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+      <Method Name="NoDuplicates" Hidden="true" />
+      <Method Name="NoDuplicatesNazUloge" Hidden="true" />
+      <Method Name="Uloga" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="UpravljanjeProjektima.Admin.Uloga.ExistsCommand" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Admin\Uloga.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABAAhAAAAAIIACAAAAACgAAAICAAAAIAAAACAEEADAA=</HashCode>
+      <FileName>Admin\Uloga.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Admin.Uloge">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <Members>
+      <Method Name="AddNewCore" Hidden="true" />
+      <Method Name="DataPortal_Fetch" Hidden="true" />
+      <Method Name="DataPortal_OnDataPortalInvokeComplete" Hidden="true" />
+      <Method Name="DataPortal_Update" Hidden="true" />
+      <Method Name="OnDeserialized" Hidden="true" />
+      <Method Name="Uloge" Hidden="true" />
+      <Method Name="Uloge_Saved" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAFAAAAABABAEAAAAAAAAiAAAAEAAIAAAAAAAAA=</HashCode>
+      <FileName>Admin\Uloge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.UlogaList">
+    <Position X="6" Y="0.5" Width="2.25" />
+    <Members>
+      <Method Name="DataPortal_Fetch" Hidden="true" />
+      <Field Name="list" Hidden="true" />
+      <Method Name="UlogaList" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABAgAAAAAABABAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UlogaList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

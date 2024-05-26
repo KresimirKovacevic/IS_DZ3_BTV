@@ -1,0 +1,12 @@
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\bin\Debug\Projekt.Dal.dll.config
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\bin\Debug\Projekt.Dal.dll
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\bin\Debug\Projekt.Dal.pdb
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\bin\Debug\EntityFramework.dll
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\bin\Debug\EntityFramework.xml
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\obj\Debug\Projekt.DAL.csproj.AssemblyReference.cache
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\obj\Debug\Projekt.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\obj\Debug\Projekt..581CB45A.Up2Date
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\obj\Debug\Projekt.Dal.dll
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\IS07-ProjektCSLA\Projekt.Dal\obj\Debug\Projekt.Dal.pdb

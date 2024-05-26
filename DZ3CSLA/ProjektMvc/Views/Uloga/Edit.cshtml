@@ -1,0 +1,31 @@
+﻿@model UpravljanjeProjektima.Admin.Uloga
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+@using (Html.BeginForm())
+{
+	<div class="noviPodatak">
+		<table>
+			<tbody>
+				<tr>
+					<td>Id uloge</td>
+					<td>@Html.LabelFor(u => u.IdUloge)</td>
+				</tr>
+				<tr>
+					<td>Naziv uloge</td>
+					<td>@Html.EditorFor(u => u.NazUloge)</td>
+				</tr>
+				<tr>
+					<td>
+						<a class="submit">Spremi</a>
+					</td>
+					<td>@Html.ActionLink("Odustani", "Index")</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+}
+
+@{Html.RenderPartial("ValidationError");}

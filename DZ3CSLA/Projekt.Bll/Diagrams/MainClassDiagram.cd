@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UpravljanjeProjektima.ProjektInfoList">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <Members>
+      <Method Name="DataPortal_Fetch" Hidden="true" />
+      <Method Name="Fetch" Hidden="true" />
+      <Method Name="ProjektInfoList" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProjektInfoList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.ProjektInfo">
+    <Position X="0.5" Y="2" Width="2.25" />
+    <Members>
+      <Method Name="GetIdValue" Hidden="true" />
+      <Method Name="ProjektInfo" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAgAAAgAA=</HashCode>
+      <FileName>ProjektInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Projekt">
+    <Position X="3.25" Y="0.5" Width="2.25" />
+    <Members>
+      <Method Name="AddBusinessRules" Hidden="true" />
+      <Method Name="DataPortal_Create" Hidden="true" />
+      <Method Name="DataPortal_Delete" Hidden="true" />
+      <Method Name="DataPortal_DeleteSelf" Hidden="true" />
+      <Method Name="DataPortal_Fetch" Hidden="true" />
+      <Method Name="DataPortal_Insert" Hidden="true" />
+      <Method Name="DataPortal_Update" Hidden="true" />
+      <Field Name="DatPocetkaProperty" Hidden="true" />
+      <Field Name="DatZavrsetkaProperty" Hidden="true" />
+      <Field Name="NazProjektaProperty" Hidden="true" />
+      <Field Name="OpisProjektaProperty" Hidden="true" />
+      <Method Name="Projekt" Hidden="true" />
+      <Field Name="SifProjektaProperty" Hidden="true" />
+      <Method Name="SifProjektaUnique" Hidden="true" />
+      <Method Name="StartDateGTEndDate" Hidden="true" />
+      <Field Name="SudioniciProjektaProperty" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="UpravljanjeProjektima.Projekt.ExistsCommand" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Projekt.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAAEAAgAABEABCBEAAABAAAAAAFAAAEAABAAgIMGDgA=</HashCode>
+      <FileName>Projekt.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SudioniciProjekta" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UpravljanjeProjektima.SudionikProjektaList">
+    <Position X="3.25" Y="4.25" Width="2.25" />
+    <Members>
+      <Method Name="Child_Fetch" Hidden="true" />
+      <Method Name="ContainsDeleted" Hidden="true" />
+      <Method Name="Load" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+      <Method Name="SudionikProjektaList" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAACAAAAAAAAAAASAAAAAAAQABQAIAAAA=</HashCode>
+      <FileName>SudionikProjektaList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.SudionikProjekta">
+    <Position X="3.25" Y="6.5" Width="2.25" />
+    <Members>
+      <Method Name="AddBusinessRules" Hidden="true" />
+      <Method Name="Child_Create" Hidden="true" />
+      <Method Name="Child_DeleteSelf" Hidden="true" />
+      <Method Name="Child_Fetch" Hidden="true" />
+      <Method Name="Child_Insert" Hidden="true" />
+      <Method Name="Child_Update" Hidden="true" />
+      <Field Name="DatDodjeleUlogeProperty" Hidden="true" />
+      <Field Name="IdOsobeProperty" Hidden="true" />
+      <Field Name="IdUlogeProperty" Hidden="true" />
+      <Field Name="ImeOsobeProperty" Hidden="true" />
+      <Method Name="Load" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+      <Field Name="PrezimeOsobeProperty" Hidden="true" />
+      <Method Name="SudionikProjekta" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAhAAAAEAAKCAEAQIAwBAAoCAAAAIAAAACAAAAGAA=</HashCode>
+      <FileName>SudionikProjekta.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UpravljanjeProjektima.OsobaInfoList">
+    <Position X="8.75" Y="0.5" Width="2.25" />
+    <Members>
+      <Method Name="DataPortal_Fetch" Hidden="true" />
+      <Method Name="OsobaInfoList" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OsobaInfoList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.OsobaInfo">
+    <Position X="8.75" Y="2" Width="2.25" />
+    <Members>
+      <Method Name="OsobaInfo" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAEAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OsobaInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Osoba">
+    <Position X="6" Y="0.5" Width="2.25" />
+    <Members>
+      <Method Name="AddBusinessRules" Hidden="true" />
+      <Method Name="DataPortal_Delete" Hidden="true" />
+      <Method Name="DataPortal_DeleteSelf" Hidden="true" />
+      <Method Name="DataPortal_Fetch" Hidden="true" />
+      <Method Name="DataPortal_Insert" Hidden="true" />
+      <Method Name="DataPortal_Update" Hidden="true" />
+      <Field Name="IdOsobeProperty" Hidden="true" />
+      <Field Name="ImeOsobeProperty" Hidden="true" />
+      <Method Name="IsOIBValid" Hidden="true" />
+      <Field Name="OIBProperty" Hidden="true" />
+      <Method Name="Osoba" Hidden="true" />
+      <Field Name="PrezimeOsobeProperty" Hidden="true" />
+      <Field Name="ProjektiOsobeProperty" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="UpravljanjeProjektima.Osoba.ExistsCommand" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Osoba.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAoBAEAABCBEAQIAQBAAgAFAAQEAARAAAAEEGAQ=</HashCode>
+      <FileName>Osoba.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProjektiOsobe" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UpravljanjeProjektima.ProjektOsobeList">
+    <Position X="6" Y="4.25" Width="2.25" />
+    <Members>
+      <Method Name="Child_Fetch" Hidden="true" />
+      <Method Name="ContainsDeleted" Hidden="true" />
+      <Method Name="Load" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+      <Method Name="ProjektOsobeList" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAQAAAAACAAAAAAAAAAACAQAAAAIAAAQAAAgAA=</HashCode>
+      <FileName>ProjektOsobeList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.ProjektOsobe">
+    <Position X="6" Y="6.5" Width="2.25" />
+    <Members>
+      <Method Name="AddBusinessRules" Hidden="true" />
+      <Method Name="Child_Create" Hidden="true" />
+      <Method Name="Child_DeleteSelf" Hidden="true" />
+      <Method Name="Child_Fetch" Hidden="true" />
+      <Method Name="Child_Insert" Hidden="true" />
+      <Method Name="Child_Update" Hidden="true" />
+      <Field Name="DatDodjeleUlogeProperty" Hidden="true" />
+      <Field Name="IdUlogeProperty" Hidden="true" />
+      <Method Name="Load" Hidden="true" />
+      <Field Name="NazProjektaProperty" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+      <Method Name="ProjektOsobe" Hidden="true" />
+      <Field Name="SifProjektaProperty" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAAAhAAAAAAALCAEAAAAgAAAICAAAAIAAgACgIAACAA=</HashCode>
+      <FileName>ProjektOsobe.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UpravljanjeProjektima.Zaduzenje">
+    <Position X="4.5" Y="9.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAACAAAAAIAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>Zaduzenje.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Admin.Uloga">
+    <Position X="7.5" Y="13.75" Width="2.25" />
+    <Members>
+      <Method Name="AddBusinessRules" Hidden="true" />
+      <Method Name="Child_DeleteSelf" Hidden="true" />
+      <Method Name="Child_Fetch" Hidden="true" />
+      <Method Name="Child_Insert" Hidden="true" />
+      <Method Name="Child_Update" Hidden="true" />
+      <Method Name="GetMax" Hidden="true" />
+      <Field Name="idSet" Hidden="true" />
+      <Field Name="IdUlogeProperty" Hidden="true" />
+      <Method Name="Load" Hidden="true" />
+      <Field Name="NazUlogeProperty" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+      <Method Name="NoDuplicates" Hidden="true" />
+      <Method Name="NoDuplicatesNazUloge" Hidden="true" />
+      <Method Name="Uloga" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="UpravljanjeProjektima.Admin.Uloga.ExistsCommand" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Admin\Uloga.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABAAhAAAAAIIACAAAAACgAAAICAAAAIAAAACAEEADAA=</HashCode>
+      <FileName>Admin\Uloga.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Admin.Uloge">
+    <Position X="7.5" Y="11.75" Width="2.25" />
+    <Members>
+      <Method Name="AddNewCore" Hidden="true" />
+      <Method Name="DataPortal_Fetch" Hidden="true" />
+      <Method Name="DataPortal_OnDataPortalInvokeComplete" Hidden="true" />
+      <Method Name="DataPortal_Update" Hidden="true" />
+      <Method Name="OnDeserialized" Hidden="true" />
+      <Method Name="Uloge" Hidden="true" />
+      <Method Name="Uloge_Saved" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAFAAAAABABAEAAAAAAAAiAAAAEAAIAAAAAAAAA=</HashCode>
+      <FileName>Admin\Uloge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.UlogaList">
+    <Position X="4.5" Y="11.75" Width="2.25" />
+    <Members>
+      <Method Name="DataPortal_Fetch" Hidden="true" />
+      <Field Name="list" Hidden="true" />
+      <Method Name="UlogaList" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABAgAAAAAABABAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UlogaList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

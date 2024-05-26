@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UpravljanjeProjektima.Core.BaseFormControl">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAAAAIABCAABASAAAAAACAAAAAgACAAAA=</HashCode>
+      <FileName>Core\BaseFormControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.MainForm" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAQAAQgiAAOBAIAACUIhIKAJIAAAgBABIgACAAAJA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.OsobaControl" Collapsed="true">
+    <Position X="2.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQVIAAQCETABAAQAAQCAQNViCAFCggIYgwcACBEQQQY=</HashCode>
+      <FileName>OsobaControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.OsobaSelectDialog" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQSAAAAAAAQCAAEACgAAAAAAQAAAAAAEARQA=</HashCode>
+      <FileName>OsobaSelectDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Program" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.ProjektApplication" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>ProjektApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.ProjektControl" Collapsed="true">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>E0RIAQUQwDIBAAQAAQCASFVmAAkABgAQggcAABkDSAQ=</HashCode>
+      <FileName>ProjektControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.ProjektSelectDialog" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAQCAAAAAAAACAAEACgAAAAAAQAAAAAAEARQA=</HashCode>
+      <FileName>ProjektSelectDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.UlogeControl" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASQAAAAAICAAEEQAAACAABAiAAEAAAAAggAAABEIAAA=</HashCode>
+      <FileName>UlogeControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Properties.Resources" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAEQAAAQAAAAAQAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Properties.Settings" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

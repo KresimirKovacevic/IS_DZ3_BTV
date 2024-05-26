@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OODDummy.Ver1.Projekt" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAABAEAAAAAAABAAAAAAAAAAAAAAAAgAAABAA=</HashCode>
+      <FileName>Ver1\v1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OODDummy.Ver1.ProjektList" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ver1\v1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OODDummy.Ver1.SudionikProjektaList" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ver1\v1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OODDummy.Ver1.Osoba" Collapsed="true">
+    <Position X="4" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAABAAgAAAAAAAAEAAAAAAEAQ=</HashCode>
+      <FileName>Ver1\v1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OODDummy.Ver1.OsobaList" Collapsed="true">
+    <Position X="4" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ver1\v1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OODDummy.Ver1.ProjektOsobeList" Collapsed="true">
+    <Position X="4" Y="2.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ver1\v1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OODDummy.Ver1.Zaposlenik" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAABAAgAAAAAAAAAAAAAAAEAQ=</HashCode>
+      <FileName>Ver1\v1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OODDummy.Ver1.Uloga" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Ver1\v1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OODDummy.Ver1.UlogaList" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ver1\v1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OODDummy.Ver1.UlogaEdit" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Ver1\v1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OODDummy.Ver1.UlogaEditList" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ver1\v1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

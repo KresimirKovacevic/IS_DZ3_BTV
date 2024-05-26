@@ -1,0 +1,450 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|c:\\users\\kresimir k\\desktop\\8. semestar\\si\\is07-projekti\\is07-projektcsla\\projekt.dal\\osoba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\osoba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.dal\\partial\\projektdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\partial\\projektdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|c:\\users\\kresimir k\\desktop\\8. semestar\\si\\is07-projekti\\is07-projektcsla\\projekt.dal\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|c:\\users\\kresimir k\\desktop\\8. semestar\\si\\is07-projekti\\is07-projektcsla\\projekt.dal\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Projekt.DAL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.dal\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.dal\\contextmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\contextmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|c:\\users\\kresimir k\\desktop\\8. semestar\\si\\is07-projekti\\is07-projektcsla\\projekt.dal\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\Projekt.BLL.csproj|c:\\users\\kresimir k\\desktop\\8. semestar\\si\\is07-projekti\\is07-projektcsla\\projekt.bll\\projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\Projekt.BLL.csproj|solutionrelative:projekt.bll\\projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\Projekt.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.bll\\diagrams\\figure 3-10.cd||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\Projekt.BLL.csproj|solutionrelative:projekt.bll\\diagrams\\figure 3-10.cd||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B82FDC5-B5C2-4008-8CE1-81179151B305}|ProjektWpf\\ProjektWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projektwpf\\mainform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B82FDC5-B5C2-4008-8CE1-81179151B305}|ProjektWpf\\ProjektWPF.csproj|solutionrelative:projektwpf\\mainform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B82FDC5-B5C2-4008-8CE1-81179151B305}|ProjektWpf\\ProjektWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projektwpf\\ulogeedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B82FDC5-B5C2-4008-8CE1-81179151B305}|ProjektWpf\\ProjektWPF.csproj|solutionrelative:projektwpf\\ulogeedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B82FDC5-B5C2-4008-8CE1-81179151B305}|ProjektWpf\\ProjektWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projektwpf\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B82FDC5-B5C2-4008-8CE1-81179151B305}|ProjektWpf\\ProjektWPF.csproj|solutionrelative:projektwpf\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F302BE93-CD90-4766-A6B9-7BC9D14721D2}|OODizajn\\OODizajn.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\oodizajn\\projektosoba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F302BE93-CD90-4766-A6B9-7BC9D14721D2}|OODizajn\\OODizajn.csproj|solutionrelative:oodizajn\\projektosoba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F302BE93-CD90-4766-A6B9-7BC9D14721D2}|OODizajn\\OODizajn.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\oodizajn\\figure 3-3.cd||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F302BE93-CD90-4766-A6B9-7BC9D14721D2}|OODizajn\\OODizajn.csproj|solutionrelative:oodizajn\\figure 3-3.cd||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\Projekt.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.bll\\projektinfolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\Projekt.BLL.csproj|solutionrelative:projekt.bll\\projektinfolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\Projekt.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.bll\\projektinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\Projekt.BLL.csproj|solutionrelative:projekt.bll\\projektinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.dal\\projekti.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\projekti.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.dal\\projekti.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\projekti.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.dal\\uloga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\uloga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.dal\\projekti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\projekti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.dal\\projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projekt.dal\\projekti.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|solutionrelative:projekt.dal\\projekti.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6B671-7E79-4678-8254-E90108867EAC}|ProjektMvc\\ProjektMVC.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\projektmvc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FFF6B671-7E79-4678-8254-E90108867EAC}|ProjektMvc\\ProjektMVC.csproj|solutionrelative:projektmvc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kresimir K\\AppData\\Local\\Temp\\.vsdbgsrc\\756181c974a2591e09feb76831385144120fe135c8d2263604387db3420506da\\ProjektInfoList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kresimir K\\AppData\\Roaming\\Microsoft\\UserSecrets\\e2490cb7-8c73-4c5c-a632-cba74332e7af\\secrets.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\Projekt.DAL.csproj|c:\\users\\kresimir k\\desktop\\8. semestar\\si\\is07-projekti\\is07-projektcsla\\projekt.dal\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Osoba.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Osoba.cs",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Osoba.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Osoba.cs",
+              "RelativeToolTip": "Projekt.Dal\\Osoba.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T20:54:08.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjektDataContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Partial\\ProjektDataContext.cs",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Partial\\ProjektDataContext.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Partial\\ProjektDataContext.cs",
+              "RelativeToolTip": "Projekt.Dal\\Partial\\ProjektDataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T17:00:03.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Properties\\Settings.settings",
+              "RelativeToolTip": "Projekt.Dal\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-05-19T20:19:35.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "Projekt.Dal\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T20:19:28.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Projekt.DAL",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekt.DAL.csproj",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Projekt.DAL.csproj",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekt.DAL.csproj",
+              "RelativeToolTip": "Projekt.Dal\\Projekt.DAL.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-19T20:19:13.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\app.config",
+              "RelativeDocumentMoniker": "Projekt.Dal\\app.config",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\app.config",
+              "RelativeToolTip": "Projekt.Dal\\app.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-19T20:15:43.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EditForm.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\ProjektWpf\\EditForm.cs",
+              "RelativeDocumentMoniker": "ProjektWpf\\EditForm.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\ProjektWpf\\EditForm.cs",
+              "RelativeToolTip": "ProjektWpf\\EditForm.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T16:09:48.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProjektOsoba.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\OODizajn\\ProjektOsoba.cs",
+              "RelativeDocumentMoniker": "OODizajn\\ProjektOsoba.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\OODizajn\\ProjektOsoba.cs",
+              "RelativeToolTip": "OODizajn\\ProjektOsoba.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T16:09:15.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Figure 3-3.cd",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\OODizajn\\Figure 3-3.cd",
+              "RelativeDocumentMoniker": "OODizajn\\Figure 3-3.cd",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\OODizajn\\Figure 3-3.cd",
+              "RelativeToolTip": "OODizajn\\Figure 3-3.cd",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-05-17T16:09:02.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UlogeEdit.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\ProjektWpf\\UlogeEdit.xaml.cs",
+              "RelativeDocumentMoniker": "ProjektWpf\\UlogeEdit.xaml.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\ProjektWpf\\UlogeEdit.xaml.cs",
+              "RelativeToolTip": "ProjektWpf\\UlogeEdit.xaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAwBgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T16:11:32.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProjektInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Bll\\ProjektInfo.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\ProjektInfo.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Bll\\ProjektInfo.cs",
+              "RelativeToolTip": "Projekt.Bll\\ProjektInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T16:07:23.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContextManager.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\ContextManager.cs",
+              "RelativeDocumentMoniker": "Projekt.Dal\\ContextManager.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\ContextManager.cs",
+              "RelativeToolTip": "Projekt.Dal\\ContextManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T16:59:30.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Database.cs",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Database.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Database.cs",
+              "RelativeToolTip": "Projekt.Dal\\Database.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T16:59:20.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainForm.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\ProjektWpf\\MainForm.xaml.cs",
+              "RelativeDocumentMoniker": "ProjektWpf\\MainForm.xaml.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\ProjektWpf\\MainForm.xaml.cs",
+              "RelativeToolTip": "ProjektWpf\\MainForm.xaml.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAxwJgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T16:11:39.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Figure 3-10.cd",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Bll\\Diagrams\\Figure 3-10.cd",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Diagrams\\Figure 3-10.cd",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Bll\\Diagrams\\Figure 3-10.cd",
+              "RelativeToolTip": "Projekt.Bll\\Diagrams\\Figure 3-10.cd",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-05-17T16:26:15.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Projekt.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Bll\\Projekt.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Projekt.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Bll\\Projekt.cs",
+              "RelativeToolTip": "Projekt.Bll\\Projekt.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAkwFAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T16:07:01.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Projekti.edmx.diagram",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekti.edmx.diagram",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Projekti.edmx.diagram",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekti.edmx.diagram",
+              "RelativeToolTip": "Projekt.Dal\\Projekti.edmx.diagram",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-17T16:06:29.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Projekti.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekti.cs",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Projekti.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekti.cs",
+              "RelativeToolTip": "Projekt.Dal\\Projekti.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T16:06:18.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Uloga.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Uloga.cs",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Uloga.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Uloga.cs",
+              "RelativeToolTip": "Projekt.Dal\\Uloga.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T16:06:16.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Projekt.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekt.cs",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Projekt.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekt.cs",
+              "RelativeToolTip": "Projekt.Dal\\Projekt.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T16:05:43.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Projekti.tt",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekti.tt",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Projekti.tt",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekti.tt",
+              "RelativeToolTip": "Projekt.Dal\\Projekti.tt",
+              "ViewState": "AQIAAMsAAAAAAAAAAAD4v8sAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-17T16:03:39.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Projekti.Context.tt",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekti.Context.tt",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Projekti.Context.tt",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Dal\\Projekti.Context.tt",
+              "RelativeToolTip": "Projekt.Dal\\Projekti.Context.tt",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAAQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-17T16:00:40.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProjektInfoList.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Bll\\ProjektInfoList.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\ProjektInfoList.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\Projekt.Bll\\ProjektInfoList.cs",
+              "RelativeToolTip": "Projekt.Bll\\ProjektInfoList.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAkwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T16:46:08.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProjektInfoList.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\AppData\\Local\\Temp\\.vsdbgsrc\\756181c974a2591e09feb76831385144120fe135c8d2263604387db3420506da\\ProjektInfoList.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\756181c974a2591e09feb76831385144120fe135c8d2263604387db3420506da\\ProjektInfoList.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\AppData\\Local\\Temp\\.vsdbgsrc\\756181c974a2591e09feb76831385144120fe135c8d2263604387db3420506da\\ProjektInfoList.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\756181c974a2591e09feb76831385144120fe135c8d2263604387db3420506da\\ProjektInfoList.cs [Read Only]",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T16:58:26.528Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "secrets.xml",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\AppData\\Roaming\\Microsoft\\UserSecrets\\e2490cb7-8c73-4c5c-a632-cba74332e7af\\secrets.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\e2490cb7-8c73-4c5c-a632-cba74332e7af\\secrets.xml",
+              "ToolTip": "C:\\Users\\Kresimir K\\AppData\\Roaming\\Microsoft\\UserSecrets\\e2490cb7-8c73-4c5c-a632-cba74332e7af\\secrets.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\e2490cb7-8c73-4c5c-a632-cba74332e7af\\secrets.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAACaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-05-13T16:40:37.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\ProjektMvc\\Web.config",
+              "RelativeDocumentMoniker": "ProjektMvc\\Web.config",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\IS07-Projekti\\IS07-ProjektCSLA\\ProjektMvc\\Web.config",
+              "RelativeToolTip": "ProjektMvc\\Web.config",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAAABcAAACyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-13T16:30:53.791Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

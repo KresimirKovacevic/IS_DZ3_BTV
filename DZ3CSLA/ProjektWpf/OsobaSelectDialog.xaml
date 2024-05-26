@@ -1,0 +1,25 @@
+﻿<Window x:Class="UpravljanjeProjektima.OsobaSelectDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:csla="clr-namespace:Csla.Wpf;assembly=Csla" 
+    xmlns:proj="clr-namespace:UpravljanjeProjektima;assembly=Projekt.Bll"
+    Title="Odaberi osobu" Height="450" Width="300">
+    <Window.Resources>
+        <csla:CslaDataProvider x:Key="OsobeList"
+                             ObjectType="{x:Type proj:OsobaInfoList}"
+                             FactoryMethod="Get"
+                             IsAsynchronous="True">
+        </csla:CslaDataProvider>
+    </Window.Resources>
+    <Grid>
+    <ListView Margin="11.25,11,11.25,58" Name="listViewOsobe"  ItemsSource="{Binding Source={StaticResource OsobeList}}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextBlock Text="{Binding Path=NazOsobe}"/>
+                </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+        <Button Height="31" HorizontalAlignment="Left" Margin="11.25,0,0,18" Name="buttonOdaberi" 
+                VerticalAlignment="Bottom" Width="75" Click="Odaberi">Odaberi</Button>
+    </Grid>
+</Window>

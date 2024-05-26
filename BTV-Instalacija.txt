@@ -1,0 +1,14 @@
+0.	Dohvatiti izvorni kod, te datoteke BTV-SqlKreiranje.txt i BTV-SqlInsert.txt.
+	Link na GitHub:
+
+1.	Pokrenuti kod iz BTV-SqlKreiranje.txt u poželjnom okruženju za upravljanje bazama podataka (isprobano s 'Microsoft SQL Server Management Studio').
+
+2.	Pokrenuti kod iz BTV-SqlInsert.txt u istom okruženju.
+
+3.	Pokrenuti DZ3CSLA.sln iz mape s izvornim kodom.
+
+4.	Izmijeniti connectionString u app.conf datotekama projekata tako da koristi Vasu bazu podataka.
+
+(opcionalno)	Pokrenuti testove unutar rješenja (Test => Run All Tests).
+
+5.	Build i Run MainWPF (u slučaju da se ne može inicijalno izabrati, pritisnuti strjelicu prema dolje kod gumba Start => Configure Startup Projects...).

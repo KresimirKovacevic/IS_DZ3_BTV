@@ -1,0 +1,45 @@
+﻿@model UpravljanjeProjektima.Osoba
+
+@{
+    ViewBag.Title = Model.PunoImeOsobe;
+}
+
+<div class="noviPodatak">
+	<table>
+		<tbody>
+			<tr>
+				<td>Ime</td>
+				<td>@Model.ImeOsobe</td>
+			</tr>
+			<tr>
+				<td>Prezime</td>
+				<td>@Model.PrezimeOsobe</td>
+			</tr>
+			<tr>
+				<td>OIB</td>
+				<td>@Model.OIB</td>
+			</tr>
+			<tr>
+				<td>
+					@Html.ActionLink("Ažuriraj", "Edit", new { id = Model.IdOsobe })
+					&nbsp;				
+					@using (Html.BeginForm("Delete", "Osoba", new { IdOsobe = Model.IdOsobe }))
+							{
+									<a class="delete">Obriši</a>            
+							}					
+				</td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>
+@Html.ActionLink("Dodaj na projekt", "Select", "Projekt", new { IdOsobe = Model.IdOsobe }, null)
+</p>
+
+@{
+	if (Model.ProjektiOsobe.Count > 0){
+		Html.RenderPartial("Projekti", Model.ProjektiOsobe, new ViewDataDictionary() { { "IdOsobe", Model.IdOsobe } });
+	}
+}

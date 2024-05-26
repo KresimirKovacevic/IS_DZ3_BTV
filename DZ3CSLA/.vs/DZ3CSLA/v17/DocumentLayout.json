@@ -1,0 +1,798 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\admin\\departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\admin\\departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\admin\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\admin\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|c:\\users\\kresimir k\\desktop\\8. semestar\\si\\dz3\\kod\\dz3csla\\mainwpf\\departmentsedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|solutionrelative:mainwpf\\departmentsedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\mainwpf\\departmentsedit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|solutionrelative:mainwpf\\departmentsedit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\mainwpf\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|solutionrelative:mainwpf\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\mainwpf\\projektedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|solutionrelative:mainwpf\\projektedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\mainwpf\\personselectdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|solutionrelative:mainwpf\\personselectdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\mainwpf\\mainform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|solutionrelative:mainwpf\\mainform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\mainwpf\\mainformbackup.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|solutionrelative:mainwpf\\mainformbackup.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\mainwpf\\osobaedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|solutionrelative:mainwpf\\osobaedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\admin\\uloge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\admin\\uloge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\BTV.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.dal\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\BTV.DAL.csproj|solutionrelative:projekt.dal\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\mainwpf\\mainform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|solutionrelative:mainwpf\\mainform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\mainwpf\\personselectdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|solutionrelative:mainwpf\\personselectdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\osobainfolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\osobainfolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\osobainfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\osobainfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\osoba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\osoba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\personinfolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\personinfolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\mainwpf\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5A36AEC2-CAF9-4EF7-91E4-D8325549344E}|MainWpf\\MainWPF.csproj|solutionrelative:mainwpf\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\BTV.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.dal\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\BTV.DAL.csproj|solutionrelative:projekt.dal\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\BTV.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.dal\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\BTV.DAL.csproj|solutionrelative:projekt.dal\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\BTV.DAL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.dal\\class_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E092BF6-060E-483C-BADE-396E509B7283}|Projekt.Dal\\BTV.DAL.csproj|solutionrelative:projekt.dal\\class_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\btv.testnu\\locationparsetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|solutionrelative:btv.testnu\\locationparsetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\btv.testnu\\connectiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|solutionrelative:btv.testnu\\connectiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\btv.testnu\\dategttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|solutionrelative:btv.testnu\\dategttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\btv.testnu\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|solutionrelative:btv.testnu\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\workerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\workerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\projektosobe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\projektosobe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\btv.testnu\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|solutionrelative:btv.testnu\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\departmentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\departmentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\persondepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\persondepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\persondepartmentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\persondepartmentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\btv.testnu\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{98FA7342-3127-4FD3-BEBD-221A3865CCA9}|BTV.TestNU\\BTVtests.csproj|solutionrelative:btv.testnu\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\projektosobelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\projektosobelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\sensorlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\sensorlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\sudionikprojekta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\sudionikprojekta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\zaduzenje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\zaduzenje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\admin\\uloga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\admin\\uloga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\idates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\idates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\ulogalist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\ulogalist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\isadrziuloge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\isadrziuloge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\projektinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\projektinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\projekt.bll\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0FFD6A-2802-4018-9C6A-E43512B025EC}|Projekt.Bll\\BTV.BLL.csproj|solutionrelative:projekt.bll\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DepartmentsEdit.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\DepartmentsEdit.xaml.cs",
+              "RelativeDocumentMoniker": "MainWpf\\DepartmentsEdit.xaml.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\DepartmentsEdit.xaml.cs",
+              "RelativeToolTip": "MainWpf\\DepartmentsEdit.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T19:42:11.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentsEdit.xaml",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\DepartmentsEdit.xaml",
+              "RelativeDocumentMoniker": "MainWpf\\DepartmentsEdit.xaml",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\DepartmentsEdit.xaml",
+              "RelativeToolTip": "MainWpf\\DepartmentsEdit.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T19:41:52.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Admin\\Department.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Admin\\Department.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Admin\\Department.cs",
+              "RelativeToolTip": "Projekt.Bll\\Admin\\Department.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAAAsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T14:00:41.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditForm.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\EditForm.cs",
+              "RelativeDocumentMoniker": "MainWpf\\EditForm.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\EditForm.cs",
+              "RelativeToolTip": "MainWpf\\EditForm.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwB8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T19:55:28.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProjektEdit.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\ProjektEdit.xaml.cs",
+              "RelativeDocumentMoniker": "MainWpf\\ProjektEdit.xaml.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\ProjektEdit.xaml.cs",
+              "RelativeToolTip": "MainWpf\\ProjektEdit.xaml.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAjwFYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T20:04:49.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PersonSelectDialog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\PersonSelectDialog.xaml.cs",
+              "RelativeDocumentMoniker": "MainWpf\\PersonSelectDialog.xaml.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\PersonSelectDialog.xaml.cs",
+              "RelativeToolTip": "MainWpf\\PersonSelectDialog.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T19:19:07.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "mainFormBackup.txt",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\mainFormBackup.txt",
+              "RelativeDocumentMoniker": "MainWpf\\mainFormBackup.txt",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\mainFormBackup.txt",
+              "RelativeToolTip": "MainWpf\\mainFormBackup.txt",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAIwHkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-26T20:03:22.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OsobaEdit.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\OsobaEdit.xaml.cs",
+              "RelativeDocumentMoniker": "MainWpf\\OsobaEdit.xaml.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\OsobaEdit.xaml.cs",
+              "RelativeToolTip": "MainWpf\\OsobaEdit.xaml.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAArwEcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T20:02:16.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainForm.xaml",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\MainForm.xaml",
+              "RelativeDocumentMoniker": "MainWpf\\MainForm.xaml",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\MainForm.xaml",
+              "RelativeToolTip": "MainWpf\\MainForm.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T19:37:23.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PersonSelectDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\PersonSelectDialog.xaml",
+              "RelativeDocumentMoniker": "MainWpf\\PersonSelectDialog.xaml",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\PersonSelectDialog.xaml",
+              "RelativeToolTip": "MainWpf\\PersonSelectDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T19:20:10.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainForm.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\MainForm.xaml.cs",
+              "RelativeDocumentMoniker": "MainWpf\\MainForm.xaml.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\MainForm.xaml.cs",
+              "RelativeToolTip": "MainWpf\\MainForm.xaml.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAAwHQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T18:51:38.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PersonInfoList.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\PersonInfoList.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\PersonInfoList.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\PersonInfoList.cs",
+              "RelativeToolTip": "Projekt.Bll\\PersonInfoList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T19:23:39.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Class_T.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Dal\\Class_T.cs",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Class_T.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Dal\\Class_T.cs",
+              "RelativeToolTip": "Projekt.Dal\\Class_T.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T17:53:44.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LocationParseTests.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\LocationParseTests.cs",
+              "RelativeDocumentMoniker": "BTV.TestNU\\LocationParseTests.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\LocationParseTests.cs",
+              "RelativeToolTip": "BTV.TestNU\\LocationParseTests.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAkwE8AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T16:05:12.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Dal\\app.config",
+              "RelativeDocumentMoniker": "Projekt.Dal\\app.config",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Dal\\app.config",
+              "RelativeToolTip": "Projekt.Dal\\app.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-26T18:54:36.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\App.config",
+              "RelativeDocumentMoniker": "Projekt.Bll\\App.config",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\App.config",
+              "RelativeToolTip": "Projekt.Bll\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-20T17:08:42.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DateGTTests.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\DateGTTests.cs",
+              "RelativeDocumentMoniker": "BTV.TestNU\\DateGTTests.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\DateGTTests.cs",
+              "RelativeToolTip": "BTV.TestNU\\DateGTTests.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwDAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T15:35:56.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Worker.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Worker.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Worker.cs",
+              "RelativeToolTip": "Projekt.Bll\\Worker.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAYwHIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T14:11:58.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\app.config",
+              "RelativeDocumentMoniker": "BTV.TestNU\\app.config",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\app.config",
+              "RelativeToolTip": "BTV.TestNU\\app.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-26T14:17:24.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DepartmentList.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\DepartmentList.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\DepartmentList.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\DepartmentList.cs",
+              "RelativeToolTip": "Projekt.Bll\\DepartmentList.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAQwBMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T13:38:20.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PersonDepartment.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\PersonDepartment.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\PersonDepartment.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\PersonDepartment.cs",
+              "RelativeToolTip": "Projekt.Bll\\PersonDepartment.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T13:39:56.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PersonDepartmentList.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\PersonDepartmentList.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\PersonDepartmentList.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\PersonDepartmentList.cs",
+              "RelativeToolTip": "Projekt.Bll\\PersonDepartmentList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T15:12:17.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IDates.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\IDates.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\IDates.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\IDates.cs",
+              "RelativeToolTip": "Projekt.Bll\\IDates.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T13:33:42.61Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Departments.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Admin\\Departments.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Admin\\Departments.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Admin\\Departments.cs",
+              "RelativeToolTip": "Projekt.Bll\\Admin\\Departments.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T19:58:35.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Uloge.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Admin\\Uloge.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Admin\\Uloge.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Admin\\Uloge.cs",
+              "RelativeToolTip": "Projekt.Bll\\Admin\\Uloge.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAswEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T13:13:16.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Dal\\Department.cs",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Department.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Dal\\Department.cs",
+              "RelativeToolTip": "Projekt.Dal\\Department.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAkwAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T15:28:46.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OsobaInfoList.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\OsobaInfoList.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\OsobaInfoList.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\OsobaInfoList.cs",
+              "RelativeToolTip": "Projekt.Bll\\OsobaInfoList.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T22:17:49.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PersonInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\PersonInfo.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\PersonInfo.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\PersonInfo.cs",
+              "RelativeToolTip": "Projekt.Bll\\PersonInfo.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T19:28:24.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OsobaInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\OsobaInfo.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\OsobaInfo.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\OsobaInfo.cs",
+              "RelativeToolTip": "Projekt.Bll\\OsobaInfo.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T22:04:22.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Osoba.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Osoba.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Osoba.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Osoba.cs",
+              "RelativeToolTip": "Projekt.Bll\\Osoba.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAnwJUAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T16:43:28.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Projekt.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Projekt.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Projekt.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Projekt.cs",
+              "RelativeToolTip": "Projekt.Bll\\Projekt.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAArwH0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T18:53:31.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\App.config",
+              "RelativeDocumentMoniker": "MainWpf\\App.config",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\MainWpf\\App.config",
+              "RelativeToolTip": "MainWpf\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-26T18:56:31.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ConnectionTest.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\ConnectionTest.cs",
+              "RelativeDocumentMoniker": "BTV.TestNU\\ConnectionTest.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\ConnectionTest.cs",
+              "RelativeToolTip": "BTV.TestNU\\ConnectionTest.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T13:24:55.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Assignment.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Dal\\Assignment.cs",
+              "RelativeDocumentMoniker": "Projekt.Dal\\Assignment.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Dal\\Assignment.cs",
+              "RelativeToolTip": "Projekt.Dal\\Assignment.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBUAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T15:27:49.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "WorkerHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\WorkerHelper.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\WorkerHelper.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\WorkerHelper.cs",
+              "RelativeToolTip": "Projekt.Bll\\WorkerHelper.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T21:38:51.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ProjektOsobe.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\ProjektOsobe.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\ProjektOsobe.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\ProjektOsobe.cs",
+              "RelativeToolTip": "Projekt.Bll\\ProjektOsobe.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAArwFQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T21:39:39.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ProjektOsobeList.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\ProjektOsobeList.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\ProjektOsobeList.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\ProjektOsobeList.cs",
+              "RelativeToolTip": "Projekt.Bll\\ProjektOsobeList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T21:39:28.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SudionikProjekta.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\SudionikProjekta.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\SudionikProjekta.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\SudionikProjekta.cs",
+              "RelativeToolTip": "Projekt.Bll\\SudionikProjekta.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T15:10:50.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "Projekt.Bll\\Properties\\Resources.Designer.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAADgv1UAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T19:51:13.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\packages.config",
+              "RelativeDocumentMoniker": "BTV.TestNU\\packages.config",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\packages.config",
+              "RelativeToolTip": "BTV.TestNU\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-26T13:12:32.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "BTV.TestNU\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\BTV.TestNU\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "BTV.TestNU\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T13:50:56.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "Projekt.Bll\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T13:51:07.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "SensorList.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\SensorList.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\SensorList.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\SensorList.cs",
+              "RelativeToolTip": "Projekt.Bll\\SensorList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:04:10.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "UlogaList.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\UlogaList.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\UlogaList.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\UlogaList.cs",
+              "RelativeToolTip": "Projekt.Bll\\UlogaList.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAewBQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T17:13:45.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Uloga.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Admin\\Uloga.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Admin\\Uloga.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Admin\\Uloga.cs",
+              "RelativeToolTip": "Projekt.Bll\\Admin\\Uloga.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAALMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T19:48:13.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Zaduzenje.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Zaduzenje.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\Zaduzenje.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\Zaduzenje.cs",
+              "RelativeToolTip": "Projekt.Bll\\Zaduzenje.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAQwCUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T13:54:06.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ISadrziUloge.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\ISadrziUloge.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\ISadrziUloge.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\ISadrziUloge.cs",
+              "RelativeToolTip": "Projekt.Bll\\ISadrziUloge.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T17:10:18.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ProjektInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\ProjektInfo.cs",
+              "RelativeDocumentMoniker": "Projekt.Bll\\ProjektInfo.cs",
+              "ToolTip": "C:\\Users\\Kresimir K\\Desktop\\8. semestar\\SI\\DZ3\\kod\\DZ3CSLA\\Projekt.Bll\\ProjektInfo.cs",
+              "RelativeToolTip": "Projekt.Bll\\ProjektInfo.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T14:05:50.66Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

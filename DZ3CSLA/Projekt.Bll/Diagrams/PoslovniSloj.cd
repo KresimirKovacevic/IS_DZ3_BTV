@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UpravljanjeProjektima.Projekt">
+    <Position X="6" Y="0.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="UpravljanjeProjektima.Projekt.ExistsCommand" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Projekt.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAAEAAgAABEABCBEAAABAAAAAAFAAAEAABAAgIMGDgA=</HashCode>
+      <FileName>Projekt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.ProjektInfo">
+    <Position X="3.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAgAAAgAA=</HashCode>
+      <FileName>ProjektInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.ProjektInfoList">
+    <Position X="0.75" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProjektInfoList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.SudionikProjekta" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="3" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAhAAAAEAAKCAEAQIAwBAAoCAAAAIAAAACAAAAGAA=</HashCode>
+      <FileName>SudionikProjekta.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UpravljanjeProjektima.SudionikProjektaList">
+    <Position X="0.75" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAACAAAAAAAAAAASAAAAAAAQABQAIAAAA=</HashCode>
+      <FileName>SudionikProjektaList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Zaduzenje">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAACAAAAAIAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>Zaduzenje.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Reflection.Reflector">
+    <Position X="8.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAIAAAAAACAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System\Reflection\Reflector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="UpravljanjeProjektima.ISadrziUloge" Collapsed="true">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISadrziUloge.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UpravljanjeProjektima.ProjektInfoList" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProjektInfoList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.ProjektInfo" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAgAAAgAA=</HashCode>
+      <FileName>ProjektInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Projekt" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="AddBusinessRules" Hidden="true" />
+      <Method Name="DataPortal_Create" Hidden="true" />
+      <Method Name="DataPortal_Delete" Hidden="true" />
+      <Method Name="DataPortal_DeleteSelf" Hidden="true" />
+      <Method Name="DataPortal_Fetch" Hidden="true" />
+      <Method Name="DataPortal_Insert" Hidden="true" />
+      <Method Name="DataPortal_Update" Hidden="true" />
+      <Field Name="DatPocetkaProperty" Hidden="true" />
+      <Field Name="DatZavrsetkaProperty" Hidden="true" />
+      <Field Name="NazProjektaProperty" Hidden="true" />
+      <Field Name="OpisProjektaProperty" Hidden="true" />
+      <Method Name="Projekt" Hidden="true" />
+      <Field Name="SifProjektaProperty" Hidden="true" />
+      <Method Name="SifProjektaUnique" Hidden="true" />
+      <Method Name="StartDateGTEndDate" Hidden="true" />
+      <Property Name="SudioniciProjekta" Hidden="true" />
+      <Field Name="SudioniciProjektaProperty" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAAEAAgAABEABCBEAAABAAAAAAFAAAEAABAAgIMGDgA=</HashCode>
+      <FileName>Projekt.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SudioniciProjekta" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UpravljanjeProjektima.SudionikProjektaList" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAACAAAAAAAAAAASAAAAAAAQABQAIAAAA=</HashCode>
+      <FileName>SudionikProjektaList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.SudionikProjekta" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhAAAAEAAKCAEAQIAwBAAoCAAAAIAAAACAAAAGAA=</HashCode>
+      <FileName>SudionikProjekta.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UpravljanjeProjektima.OsobaInfoList" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OsobaInfoList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.OsobaInfo" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAEAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OsobaInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Osoba" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="AddBusinessRules" Hidden="true" />
+      <Method Name="DataPortal_Delete" Hidden="true" />
+      <Method Name="DataPortal_DeleteSelf" Hidden="true" />
+      <Method Name="DataPortal_Fetch" Hidden="true" />
+      <Method Name="DataPortal_Insert" Hidden="true" />
+      <Method Name="DataPortal_Update" Hidden="true" />
+      <Field Name="IdOsobeProperty" Hidden="true" />
+      <Field Name="ImeOsobeProperty" Hidden="true" />
+      <Method Name="IsOIBValid" Hidden="true" />
+      <Field Name="OIBProperty" Hidden="true" />
+      <Method Name="Osoba" Hidden="true" />
+      <Field Name="PrezimeOsobeProperty" Hidden="true" />
+      <Property Name="ProjektiOsobe" Hidden="true" />
+      <Field Name="ProjektiOsobeProperty" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAoBAEAABCBEAQIAQBAAgAFAAQEAARAAAAEEGAQ=</HashCode>
+      <FileName>Osoba.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProjektiOsobe" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UpravljanjeProjektima.ProjektOsobeList" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAQAAAAACAAAAAAAAAAACAQAAAAIAAAQAAAgAA=</HashCode>
+      <FileName>ProjektOsobeList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.ProjektOsobe" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAhAAAAAAALCAEAAAAgAAAICAAAAIAAgACgIAACAA=</HashCode>
+      <FileName>ProjektOsobe.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UpravljanjeProjektima.Admin.Uloga" Collapsed="true">
+    <Position X="8" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAhAAAAAIIACAAAAACgAAAICAAAAIAAAACAEEADAA=</HashCode>
+      <FileName>Admin\Uloga.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Admin.Uloge" Collapsed="true">
+    <Position X="6.5" Y="4.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAFAAAAABABAEAAAAAAAAiAAAAEAAIAAAAAAAAA=</HashCode>
+      <FileName>Admin\Uloge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.UlogaList" Collapsed="true">
+    <Position X="4.25" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAgAAAAAABABAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UlogaList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpravljanjeProjektima.Zaduzenje" Collapsed="true">
+    <Position X="4.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAACAAAAAIAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>Zaduzenje.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

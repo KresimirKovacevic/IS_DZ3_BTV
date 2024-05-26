@@ -1,0 +1,57 @@
+﻿@model UpravljanjeProjektima.Projekt
+
+@{
+    ViewBag.Title = "Unos novog projekta";
+}
+
+
+@using (Html.BeginForm())
+{
+	<div>
+		<table>
+			<tbody>
+				<tr>
+					<td>Šifra projekta</td>
+					<td>@Html.EditorFor(p => p.SifProjekta)</td>
+				</tr>
+				<tr>
+					<td>Naziv projekta</td>
+					<td>@Html.EditorFor(p => p.NazProjekta)</td>
+				</tr>
+				<tr>
+					<td>Datum početka</td>
+					<td>@Html.TextBoxFor(p => p.DatPocetka, new { @class = "datum" })</td>
+				</tr>
+				<tr>
+					<td>Datum završetka</td>
+					<td>@Html.TextBoxFor(p => p.DatZavrsetka, new { @class = "datum" })</td>
+				</tr>
+				<tr>
+					<td>Opis projekta</td>
+					<td>@Html.TextAreaFor(p => p.OpisProjekta)</td>
+				</tr>
+				<tr>
+					<td>
+						<a class="submit">Spremi</a>
+					</td>
+					<td>@Html.ActionLink("Odustani", "Index")</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+}
+
+@{Html.RenderPartial("ValidationError");}
+
+
+<script language="javascript" type="text/javascript">
+	$(function () {
+		$.datepicker.setDefaults($.extend(
+			    { 'dateFormat': 'dd.mm.yy.', numberOfMonths: 1, showOtherMonths: true, selectOtherMonths: true }
+	       	)); //default postavke kalendara
+
+		$('.datum').datepicker();		
+	});
+
+</script>
+

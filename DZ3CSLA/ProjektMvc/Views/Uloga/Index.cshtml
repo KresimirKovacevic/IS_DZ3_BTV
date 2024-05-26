@@ -1,0 +1,50 @@
+﻿@model UpravljanjeProjektima.Admin.Uloge
+
+@{
+    ViewBag.Title = "Uloge";
+}
+
+@if (false)
+{			
+			<script src="../../Scripts/jquery-1.5.1-vsdoc.js" type="text/javascript"></script>
+}
+
+
+<table class="tablica">
+    <tr>        
+        <th>
+            Id uloge
+        </th>
+        <th>
+            Naziv uloge
+        </th>
+				<th colspan="2"></th>
+    </tr>
+
+		@foreach (var item in Model) {
+    <tr>				        
+        <td>
+            @item.IdUloge
+        </td>
+        <td>
+            @item.NazUloge
+        </td>
+				<td>
+            @Html.ActionLink("Ažuriraj", "Edit", new { id=item.IdUloge}) 
+				</td>
+				<td>
+						@using (Html.BeginForm("Delete", "Uloga", new { id = item.IdUloge }))
+						{
+							<a class="delete">Obriši</a>							
+						}
+        </td>
+    </tr>
+}
+
+</table>
+
+<p>
+    @Html.ActionLink("Nova uloga", "Create")
+</p>
+
+

@@ -1,0 +1,235 @@
+body
+{   
+    background-color: #DEDEDE;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Naknadno dodano...*/
+a
+{
+	text-decoration: none;
+	color: Black;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+
+#mainTable 
+{
+  border: solid 1px #000000; 
+  width: 798px; 
+  height: 90%; 
+  min-height: 100%;
+  padding: 0px; 
+  border-collapse: collapse; 
+  margin-left: auto;
+    margin-right: auto; 
+    background-color: #FFFFFF;
+}
+
+#header 
+{
+  background-image: url('images/background.jpg'); 
+  background-repeat: no-repeat;
+  height: 64px; 
+  line-height: 60px; 
+  text-align: left; 
+  color: #FFFFFF;
+  font-family: Verdana; 
+  font-size: 20px;
+  font-weight: bold; 
+  font-style: italic; 
+  padding-left: 10px
+}
+
+#navigation 
+{
+  float: left; 
+  width: 150px; 
+  background-color: #000000; 
+  height: 250px;
+  margin-left:-1px
+  
+}
+
+#navigationContent 
+{
+  color: #FFFFFF;  
+  margin-left: 25px; 
+  white-space: nowrap;
+  margin-top: 30px;  
+}
+
+#navigationContent  table
+{
+	border-spacing: 0px;	
+	border-collapse: collapse;	
+}
+
+#navigationContent td
+{	
+	padding:0px;
+}
+
+#navigationContent a
+{
+	color: white;
+	font-size: 12px;	
+	text-decoration: none;
+	font-family: Verdana;   
+  font-weight: bold; 
+  font-style: italic;   
+}
+
+#navigationContent  a:hover {
+	text-decoration: underline;
+}
+
+#content 
+{
+  font-family: Verdana; 
+  font-size: 9pt;
+  float: left; 
+  padding: 10px; 
+  padding-top: 10px; 
+  width: 625px;
+}
+
+.tablica
+{		
+	color: black;
+	background-color: white;
+	border-color: #999;
+	border-width: 1px;
+	border-style: Solid;
+	border-collapse: collapse;
+}
+
+.tablica th
+{
+	background-color:Black;
+	color:White;
+	font-weight:bold;		
+	border: 1px solid;
+	border-spacing: 0px;
+	border-color: #999;
+	padding: 3px;
+}
+
+.tablica tr a
+{
+	font-family:Verdana;
+	font-size: 9pt;
+	text-decoration: none;	
+	color: Black;
+	border-spacing: 0px;	
+}
+
+.tablica td
+{
+		padding: 3px;
+		border-right: 1px solid;
+	border-spacing: 0px;
+	border-color: #999;
+}
+
+ .zebra
+ {
+ 	background-color:#DEDEDE;
+ }
+ 
+.tablica a:hover {
+	text-decoration: underline;
+}
+
+.noviPodatak
+{
+	color: black;
+	background-color: white;
+	border-color: #999;
+	border-width: 1px;
+	border-style: Solid;	
+	border-collapse: collapse;
+	
+}
+
+.delete, .submit
+{
+	cursor:pointer;
+}
+
+.error
+{
+	color:Red;
+	font-weight:bold;
+}

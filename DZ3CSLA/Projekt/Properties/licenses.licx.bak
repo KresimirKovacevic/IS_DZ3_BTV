@@ -1,0 +1,6 @@
+DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v8.2, Version=8.2.6.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1
+DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v8.2, Version=8.2.6.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1
+DevExpress.XtraNavBar.NavBarControl, DevExpress.XtraNavBar.v8.2, Version=8.2.6.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1
+DevExpress.XtraDataLayout.DataLayoutControl, DevExpress.XtraLayout.v8.2, Version=8.2.6.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1
+DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v8.2, Version=8.2.6.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1
+DevExpress.Registration.Components.LicenseHelper, DevExpress.Registration.Components, Version=9.1.0.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd

@@ -1,0 +1,2 @@
+C:\Users\Kresimir K\Desktop\8. semestar\SI\IS07-Projekti\IS07-ProjektCSLA\Projekt\obj\Debug\ProjektWin.csproj.AssemblyReference.cache
+C:\Users\Kresimir K\Desktop\8. semestar\SI\DZ3\kod\DZ3CSLA\Projekt\obj\Debug\ProjektWin.csproj.AssemblyReference.cache

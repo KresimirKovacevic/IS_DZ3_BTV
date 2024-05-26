@@ -1,0 +1,11 @@
+C:\Users\Kresimir K\Downloads\IS08-Testiranje\Testiranje\RentACar.TestNU\bin\Debug\RentACar.TestNU.dll
+C:\Users\Kresimir K\Downloads\IS08-Testiranje\Testiranje\RentACar.TestNU\bin\Debug\RentACar.TestNU.pdb
+C:\Users\Kresimir K\Downloads\IS08-Testiranje\Testiranje\RentACar.TestNU\bin\Debug\nunit.framework.dll
+C:\Users\Kresimir K\Downloads\IS08-Testiranje\Testiranje\RentACar.TestNU\bin\Debug\RentACar.dll
+C:\Users\Kresimir K\Downloads\IS08-Testiranje\Testiranje\RentACar.TestNU\bin\Debug\RentACar.pdb
+C:\Users\Kresimir K\Downloads\IS08-Testiranje\Testiranje\RentACar.TestNU\bin\Debug\nunit.framework.xml
+C:\Users\Kresimir K\Downloads\IS08-Testiranje\Testiranje\RentACar.TestNU\obj\Debug\RentACar.TestNU.csproj.AssemblyReference.cache
+C:\Users\Kresimir K\Downloads\IS08-Testiranje\Testiranje\RentACar.TestNU\obj\Debug\RentACar.TestNU.csproj.CoreCompileInputs.cache
+C:\Users\Kresimir K\Downloads\IS08-Testiranje\Testiranje\RentACar.TestNU\obj\Debug\RentACar.82D50EAA.Up2Date
+C:\Users\Kresimir K\Downloads\IS08-Testiranje\Testiranje\RentACar.TestNU\obj\Debug\RentACar.TestNU.dll
+C:\Users\Kresimir K\Downloads\IS08-Testiranje\Testiranje\RentACar.TestNU\obj\Debug\RentACar.TestNU.pdb

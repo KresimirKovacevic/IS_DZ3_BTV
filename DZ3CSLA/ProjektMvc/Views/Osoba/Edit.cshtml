@@ -1,0 +1,36 @@
+﻿@model UpravljanjeProjektima.Osoba
+
+@{
+    ViewBag.Title = "Ažuriranje osobe";
+}
+
+@using (Html.BeginForm(new {id = Model.IdOsobe}))
+{
+	<div>
+		<table>
+			<tbody>
+				<tr>
+					<td>Ime</td>
+					<td>@Html.EditorFor(o => o.ImeOsobe)</td>
+				</tr>
+				<tr>
+					<td>Prezime</td>
+					<td>@Html.EditorFor(o => o.PrezimeOsobe)</td>
+				</tr>
+				<tr>
+					<td>OIB</td>
+					<td>@Html.EditorFor(o => o.OIB)</td>
+				</tr>
+				<tr>
+					<td>
+						<a class="submit">Spremi</a>
+					</td>
+					<td>@Html.ActionLink("Odustani", "Details", new { IdOsobe = Model.IdOsobe })</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+}
+
+
+@{Html.RenderPartial("ValidationError");}

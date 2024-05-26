@@ -1,0 +1,16 @@
+﻿<div class="error">
+ @* u kontroleru
+    List<string> errors = new List<string>();
+    ViewBag.Pogreska = ex.Message;
+    ViewBag.ErrorsList = errors;
+  *@
+@ViewBag.Pogreska  
+@if (ViewBag.ErrorsList != null && ViewBag.ErrorsList.Count > 0){
+	<ul>
+	@foreach (string s in ViewBag.ErrorsList)
+	{
+		<li>@s</li>
+	}
+	</ul>
+}
+</div>

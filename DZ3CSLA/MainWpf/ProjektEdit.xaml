@@ -1,0 +1,168 @@
+﻿<local:EditForm x:Class="UpravljanjeProjektima.ProjektEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:UpravljanjeProjektima"
+    xmlns:csla="clr-namespace:Csla.Wpf;assembly=Csla"  
+    xmlns:proj="clr-namespace:UpravljanjeProjektima;assembly=Projekt.Bll" 
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <local:EditForm.Resources>
+        <local:VisibilityConverter x:Key="VisibilityConverter" />
+        <csla:IdentityConverter x:Key="IdentityConverter" />
+        <csla:CslaDataProvider x:Key="UlogeList"
+                           ObjectType="{x:Type proj:UlogaList}"
+                           FactoryMethod="Get"
+                           IsAsynchronous="True" />
+        <csla:CslaDataProvider x:Key="Projekt"
+                           ObjectType="{x:Type proj:Projekt}"
+                           FactoryMethod="Get"
+                           IsAsynchronous="False"
+                           IsInitialLoadEnabled="False"
+                           DataChanged="DataChanged"
+                           ManageObjectLifetime="True"/>
+        <csla:ObjectStatus x:Key="ProjektStatus"
+                       DataContext="{StaticResource Projekt}" />
+    </local:EditForm.Resources>
+    <UserControl.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open"
+                    Executed="OpenCmdExecuted"
+                    CanExecute="OpenCmdCanExecute" />
+    </UserControl.CommandBindings>
+    <Grid Name="MainGrid" DataContext="{Binding Source={StaticResource Projekt}}" Margin="0 0 20 0">
+        <Grid.Resources>
+            <DataTemplate x:Key="lbTemplate">
+                <Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Style="{StaticResource LinkButton}" 
+                    Margin="0" Width="200"
+                    Command="ApplicationCommands.Open"
+                    CommandParameter="{Binding Path=IdOsobe}"
+                    Content="{Binding Path=PunoImeOsobe}" Foreground="Blue" />
+                        <TextBlock Text="{Binding Path=DatDodjeleUloge}" Width="150" />
+            <ComboBox 
+              ItemsSource="{Binding Source={StaticResource UlogeList}}" 
+              DisplayMemberPath="Value"
+              SelectedValuePath="Key"
+              SelectedValue="{Binding Path=IdUloge}" 
+              Width="150" />
+            <Button HorizontalAlignment="Left" 
+                    Command="ApplicationCommands.Delete" 
+                    CommandTarget="{Binding Source={StaticResource Projekt}, Path=CommandManager, BindsDirectlyToSource=True}"
+                    CommandParameter="{Binding}" 
+                    Content="Obriši"/>
+          </StackPanel>
+                </Grid>
+            </DataTemplate>
+            <DataTemplate x:Key="lbroTemplate">
+                <Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Style="{StaticResource LinkButton}" 
+                    Margin="0" Width="200"
+                    Command="ApplicationCommands.Open"
+                    CommandParameter="{Binding Path=IdOsobe}"
+                    Content="{Binding Path=PunoImeOsobe}" Foreground="Blue" />
+                        <TextBlock Text="{Binding Path=DatDodjeleUloge}" Width="100" />
+            <ComboBox 
+              ItemsSource="{Binding Source={StaticResource UlogeList}}" 
+              DisplayMemberPath="Value"
+              SelectedValuePath="Key"
+              SelectedValue="{Binding Path=IdUloge}" 
+              Width="150" 
+              IsEnabled="False" />
+          </StackPanel>
+                </Grid>
+            </DataTemplate>
+            <local:ListTemplateConverter x:Key="ListTemplateConverter"
+                                   TrueTemplate="{StaticResource lbTemplate}"
+                                   FalseTemplate="{StaticResource lbroTemplate}" />
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <TextBlock Style="{StaticResource HeaderTextBlock}">Projekt</TextBlock>
+            <csla:BusyAnimation Name="Busy" Height="20" Width="20" Margin="5"
+              IsRunning="{Binding Source={StaticResource Projekt}, Path=IsBusy, BindsDirectlyToSource=True}" />
+        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+            <StackPanel>
+                <TextBlock>Šifra:</TextBlock>
+                <!--<TextBlock Text="{Binding SifProjekta, Mode=OneWay}"></TextBlock>-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Name="SifraTextBox" Text="{Binding SifProjekta, Converter={StaticResource IdentityConverter}}"></TextBox>
+                    <csla:PropertyStatus Source="{Binding}" Property="SifProjekta" Grid.Column="1"
+                               Target="{Binding ElementName=SifraTextBox}" />
+                </Grid>
+                <TextBlock>Naziv:</TextBlock>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Name="NameTextBox" Grid.Column="0"
+                   Text="{Binding NazProjekta, Converter={StaticResource IdentityConverter}}" />
+                    <csla:PropertyStatus Source="{Binding}" Property="NazProjekta" Grid.Column="1"
+                               Target="{Binding ElementName=NameTextBox}" />
+                </Grid>
+                <TextBlock>Započet:</TextBlock>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Name="StartedTextBox" Text="{Binding DatPocetka, Converter={StaticResource IdentityConverter}}"></TextBox>
+                    <csla:PropertyStatus Source="{Binding}" Property="DatPocetka" Grid.Column="1"
+                               Target="{Binding ElementName=StartedTextBox}" />
+                </Grid>
+                <TextBlock>Završen:</TextBlock>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Name="EndedTextBox" Text="{Binding DatZavrsetka, Converter={StaticResource IdentityConverter}}"></TextBox>
+                    <csla:PropertyStatus Source="{Binding}" Property="DatZavrsetka" Grid.Column="1"
+                               Target="{Binding ElementName=EndedTextBox}" />
+                </Grid>
+                <TextBlock>Opis:</TextBlock>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Name="DescriptionTextBox" 
+                   Text="{Binding OpisProjekta, Converter={StaticResource IdentityConverter}}" 
+                   Grid.Column="0"
+                   TextWrapping="Wrap"
+                   VerticalScrollBarVisibility="Auto"
+                   Height="100"/>
+                    <csla:PropertyStatus Source="{Binding}" Property="OpisProjekta" Grid.Column="1"
+                               Target="{Binding ElementName=DescriptionTextBox}" />
+                </Grid>
+                <TextBlock>Sudionici projekta:</TextBlock>
+                <ListBox ItemsSource="{Binding SudioniciProjekta}" 
+                 ItemTemplate="{Binding Source={StaticResource ProjektStatus},
+                               Path=CanEditObject, 
+                               Converter={StaticResource ListTemplateConverter}}"
+                  />
+                <StackPanel Orientation="Horizontal"
+                  Visibility="{Binding Source={StaticResource ProjektStatus},Path=CanEditObject,Converter={StaticResource VisibilityConverter}}">
+                    <Button Command="ApplicationCommands.Save" 
+                CommandTarget="{Binding Source={StaticResource Projekt}, Path=CommandManager, BindsDirectlyToSource=True}"
+                HorizontalAlignment="Left" IsDefault="True">Spremi</Button>
+                    <Button Command="ApplicationCommands.Undo" 
+                CommandTarget="{Binding Source={StaticResource Projekt}, Path=CommandManager, BindsDirectlyToSource=True}"
+                HorizontalAlignment="Left" IsCancel="True">Odustani</Button>
+                    <Button Click="Assign"
+                IsEnabled="{Binding Source={StaticResource ProjektStatus},Path=CanEditObject}" 
+                HorizontalAlignment="Left">Dodaj sudionika</Button>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</local:EditForm>
+

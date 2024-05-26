@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="UpravljanjeProjektima.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="UpravljanjeProjektimaStoreContainer">
+          <EntitySet Name="Osoba" EntityType="UpravljanjeProjektima.Store.Osoba" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Projekt" EntityType="UpravljanjeProjektima.Store.Projekt" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Uloga" EntityType="UpravljanjeProjektima.Store.Uloga" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UlogaOsobe" EntityType="UpravljanjeProjektima.Store.UlogaOsobe" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="fk_Osoba_UlogaOsobe" Association="UpravljanjeProjektima.Store.fk_Osoba_UlogaOsobe">
+            <End Role="Osoba" EntitySet="Osoba" />
+            <End Role="UlogaOsobe" EntitySet="UlogaOsobe" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Projekt_UlogaOsobe" Association="UpravljanjeProjektima.Store.fk_Projekt_UlogaOsobe">
+            <End Role="Projekt" EntitySet="Projekt" />
+            <End Role="UlogaOsobe" EntitySet="UlogaOsobe" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Uloga_UlogaOsobe" Association="UpravljanjeProjektima.Store.fk_Uloga_UlogaOsobe">
+            <End Role="Uloga" EntitySet="Uloga" />
+            <End Role="UlogaOsobe" EntitySet="UlogaOsobe" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Osoba">
+          <Key>
+            <PropertyRef Name="IdOsobe" />
+          </Key>
+          <Property Name="IdOsobe" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PrezimeOsobe" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="ImeOsobe" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="OIB" Type="nvarchar" Nullable="false" MaxLength="11" />
+        </EntityType>
+        <EntityType Name="Projekt">
+          <Key>
+            <PropertyRef Name="SifProjekta" />
+          </Key>
+          <Property Name="SifProjekta" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="NazProjekta" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="OpisProjekta" Type="nvarchar(max)" />
+          <Property Name="DatPocetka" Type="datetime" />
+          <Property Name="DatZavrsetka" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Uloga">
+          <Key>
+            <PropertyRef Name="IdUloge" />
+          </Key>
+          <Property Name="IdUloge" Type="int" Nullable="false" />
+          <Property Name="NazUloge" Type="nvarchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="UlogaOsobe">
+          <Key>
+            <PropertyRef Name="SifProjekta" />
+            <PropertyRef Name="IdOsobe" />
+          </Key>
+          <Property Name="SifProjekta" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="IdOsobe" Type="int" Nullable="false" />
+          <Property Name="IdUloge" Type="int" Nullable="false" />
+          <Property Name="DatDodjele" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="fk_Osoba_UlogaOsobe">
+          <End Role="Osoba" Type="UpravljanjeProjektima.Store.Osoba" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="UlogaOsobe" Type="UpravljanjeProjektima.Store.UlogaOsobe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Osoba">
+              <PropertyRef Name="IdOsobe" />
+            </Principal>
+            <Dependent Role="UlogaOsobe">
+              <PropertyRef Name="IdOsobe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Projekt_UlogaOsobe">
+          <End Role="Projekt" Type="UpravljanjeProjektima.Store.Projekt" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="UlogaOsobe" Type="UpravljanjeProjektima.Store.UlogaOsobe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projekt">
+              <PropertyRef Name="SifProjekta" />
+            </Principal>
+            <Dependent Role="UlogaOsobe">
+              <PropertyRef Name="SifProjekta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Uloga_UlogaOsobe">
+          <End Role="Uloga" Type="UpravljanjeProjektima.Store.Uloga" Multiplicity="1" />
+          <End Role="UlogaOsobe" Type="UpravljanjeProjektima.Store.UlogaOsobe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Uloga">
+              <PropertyRef Name="IdUloge" />
+            </Principal>
+            <Dependent Role="UlogaOsobe">
+              <PropertyRef Name="IdUloge" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UpravljanjeProjektima.Dal" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ProjektDataContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Osoba" EntityType="UpravljanjeProjektima.Dal.Osoba" />
+          <EntitySet Name="Projekt" EntityType="UpravljanjeProjektima.Dal.Projekt" />
+          <EntitySet Name="Uloga" EntityType="UpravljanjeProjektima.Dal.Uloga" />
+          <EntitySet Name="UlogaOsobe" EntityType="UpravljanjeProjektima.Dal.UlogaOsobe" />
+          <AssociationSet Name="fk_Osoba_UlogaOsobe" Association="UpravljanjeProjektima.Dal.fk_Osoba_UlogaOsobe">
+            <End Role="Osoba" EntitySet="Osoba" />
+            <End Role="UlogaOsobe" EntitySet="UlogaOsobe" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Projekt_UlogaOsobe" Association="UpravljanjeProjektima.Dal.fk_Projekt_UlogaOsobe">
+            <End Role="Projekt" EntitySet="Projekt" />
+            <End Role="UlogaOsobe" EntitySet="UlogaOsobe" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Uloga_UlogaOsobe" Association="UpravljanjeProjektima.Dal.fk_Uloga_UlogaOsobe">
+            <End Role="Uloga" EntitySet="Uloga" />
+            <End Role="UlogaOsobe" EntitySet="UlogaOsobe" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Osoba">
+          <Key>
+            <PropertyRef Name="IdOsobe" />
+          </Key>
+          <Property Name="IdOsobe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PrezimeOsobe" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+          <Property Name="ImeOsobe" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+          <Property Name="OIB" Type="String" Nullable="false" MaxLength="11" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="UlogaOsobe" Relationship="UpravljanjeProjektima.Dal.fk_Osoba_UlogaOsobe" FromRole="Osoba" ToRole="UlogaOsobe" />
+        </EntityType>
+        <EntityType Name="Projekt">
+          <Key>
+            <PropertyRef Name="SifProjekta" />
+          </Key>
+          <Property Name="SifProjekta" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="NazProjekta" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="OpisProjekta" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DatPocetka" Type="DateTime" Precision="3" />
+          <Property Name="DatZavrsetka" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="UlogaOsobe" Relationship="UpravljanjeProjektima.Dal.fk_Projekt_UlogaOsobe" FromRole="Projekt" ToRole="UlogaOsobe" />
+        </EntityType>
+        <EntityType Name="Uloga">
+          <Key>
+            <PropertyRef Name="IdUloge" />
+          </Key>
+          <Property Name="IdUloge" Type="Int32" Nullable="false" />
+          <Property Name="NazUloge" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="UlogaOsobe" Relationship="UpravljanjeProjektima.Dal.fk_Uloga_UlogaOsobe" FromRole="Uloga" ToRole="UlogaOsobe" />
+        </EntityType>
+        <EntityType Name="UlogaOsobe">
+          <Key>
+            <PropertyRef Name="SifProjekta" />
+            <PropertyRef Name="IdOsobe" />
+          </Key>
+          <Property Name="SifProjekta" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="IdOsobe" Type="Int32" Nullable="false" />
+          <Property Name="IdUloge" Type="Int32" Nullable="false" />
+          <Property Name="DatDodjele" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Osoba" Relationship="UpravljanjeProjektima.Dal.fk_Osoba_UlogaOsobe" FromRole="UlogaOsobe" ToRole="Osoba" />
+          <NavigationProperty Name="Projekt" Relationship="UpravljanjeProjektima.Dal.fk_Projekt_UlogaOsobe" FromRole="UlogaOsobe" ToRole="Projekt" />
+          <NavigationProperty Name="Uloga" Relationship="UpravljanjeProjektima.Dal.fk_Uloga_UlogaOsobe" FromRole="UlogaOsobe" ToRole="Uloga" />
+        </EntityType>
+        <Association Name="fk_Osoba_UlogaOsobe">
+          <End Role="Osoba" Type="UpravljanjeProjektima.Dal.Osoba" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="UlogaOsobe" Type="UpravljanjeProjektima.Dal.UlogaOsobe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Osoba">
+              <PropertyRef Name="IdOsobe" />
+            </Principal>
+            <Dependent Role="UlogaOsobe">
+              <PropertyRef Name="IdOsobe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Projekt_UlogaOsobe">
+          <End Role="Projekt" Type="UpravljanjeProjektima.Dal.Projekt" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="UlogaOsobe" Type="UpravljanjeProjektima.Dal.UlogaOsobe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projekt">
+              <PropertyRef Name="SifProjekta" />
+            </Principal>
+            <Dependent Role="UlogaOsobe">
+              <PropertyRef Name="SifProjekta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Uloga_UlogaOsobe">
+          <End Role="Uloga" Type="UpravljanjeProjektima.Dal.Uloga" Multiplicity="1" />
+          <End Role="UlogaOsobe" Type="UpravljanjeProjektima.Dal.UlogaOsobe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Uloga">
+              <PropertyRef Name="IdUloge" />
+            </Principal>
+            <Dependent Role="UlogaOsobe">
+              <PropertyRef Name="IdUloge" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UpravljanjeProjektimaStoreContainer" CdmEntityContainer="ProjektDataContext">
+          <EntitySetMapping Name="Osoba">
+            <EntityTypeMapping TypeName="UpravljanjeProjektima.Dal.Osoba">
+              <MappingFragment StoreEntitySet="Osoba">
+                <ScalarProperty Name="IdOsobe" ColumnName="IdOsobe" />
+                <ScalarProperty Name="PrezimeOsobe" ColumnName="PrezimeOsobe" />
+                <ScalarProperty Name="ImeOsobe" ColumnName="ImeOsobe" />
+                <ScalarProperty Name="OIB" ColumnName="OIB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Projekt">
+            <EntityTypeMapping TypeName="UpravljanjeProjektima.Dal.Projekt">
+              <MappingFragment StoreEntitySet="Projekt">
+                <ScalarProperty Name="SifProjekta" ColumnName="SifProjekta" />
+                <ScalarProperty Name="NazProjekta" ColumnName="NazProjekta" />
+                <ScalarProperty Name="OpisProjekta" ColumnName="OpisProjekta" />
+                <ScalarProperty Name="DatPocetka" ColumnName="DatPocetka" />
+                <ScalarProperty Name="DatZavrsetka" ColumnName="DatZavrsetka" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Uloga">
+            <EntityTypeMapping TypeName="UpravljanjeProjektima.Dal.Uloga">
+              <MappingFragment StoreEntitySet="Uloga">
+                <ScalarProperty Name="IdUloge" ColumnName="IdUloge" />
+                <ScalarProperty Name="NazUloge" ColumnName="NazUloge" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UlogaOsobe">
+            <EntityTypeMapping TypeName="UpravljanjeProjektima.Dal.UlogaOsobe">
+              <MappingFragment StoreEntitySet="UlogaOsobe">
+                <ScalarProperty Name="SifProjekta" ColumnName="SifProjekta" />
+                <ScalarProperty Name="IdOsobe" ColumnName="IdOsobe" />
+                <ScalarProperty Name="IdUloge" ColumnName="IdUloge" />
+                <ScalarProperty Name="DatDodjele" ColumnName="DatDodjele" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

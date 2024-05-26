@@ -1,0 +1,32 @@
+﻿@model UpravljanjeProjektima.OsobaInfoList
+
+@{
+    ViewBag.Title = "Osobe";
+}
+
+<table class="tablica">		
+    <tr>        
+        <th>
+            Osoba
+        </th>        
+				<th></th>
+    </tr>		
+		@foreach (var item in Model) {
+    <tr>				        
+        <td>
+					 @Html.ActionLink(item.NazOsobe, "Details", new { IdOsobe = item.IdOsobe })
+        </td>       
+				<td>            
+						@using (Html.BeginForm("Delete", "Osoba", new { IdOsobe = item.IdOsobe }))
+						{
+							<a class="delete">Obriši</a>            
+						}
+        </td>
+    </tr>
+}
+
+</table>
+
+<p>
+    @Html.ActionLink("Nova osoba", "Create")
+</p>

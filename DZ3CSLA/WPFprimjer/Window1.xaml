@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPFprimjer.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:diag="clr-namespace:System.Diagnostics;assembly=System"
+    Title="Window1" Height="416" Width="369">
+    <Grid>
+        <Grid.Resources>
+            <ObjectDataProvider x:Key="processes"
+                MethodName="GetProcesses"
+                ObjectType="{x:Type diag:Process}"/>
+        </Grid.Resources>
+        <ListView Margin="11.25,0,11.25,43" Name="listBox1" ItemsSource="{Binding Source={StaticResource processes}}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Path=ProcessName}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Height="23" Margin="11.25,0,0,5.4" Name="button1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="75" Click="button1_Click">Button</Button>
+    </Grid>
+
+</Window>
+

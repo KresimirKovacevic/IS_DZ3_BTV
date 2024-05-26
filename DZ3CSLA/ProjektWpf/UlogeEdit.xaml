@@ -1,0 +1,73 @@
+﻿<local:EditForm x:Class="UpravljanjeProjektima.UlogeEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:UpravljanjeProjektima"
+    xmlns:csla="clr-namespace:Csla.Wpf;assembly=Csla"  
+    xmlns:proj="clr-namespace:UpravljanjeProjektima.Admin;assembly=Projekt.Bll">
+    <local:EditForm.Resources>
+        <csla:CslaDataProvider x:Key="UlogeList"
+                           ObjectType="{x:Type proj:Uloge}"
+                           FactoryMethod="Get"
+                           IsAsynchronous="False"
+                           DataChanged="DataChanged"
+                           ManageObjectLifetime="True">
+        </csla:CslaDataProvider>
+    </local:EditForm.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+
+        <Grid Name="MainGrid" DataContext="{Binding Source={StaticResource UlogeList}}">
+        <Grid.Resources>
+            <DataTemplate x:Key="lbTemplate">
+                <Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock>Id:</TextBlock>
+                        <TextBox x:Name="IdTextBox" Text="{Binding Path=IdUloge}" 
+                     Width="100" />
+                        <csla:PropertyStatus Source="{Binding}" Property="IdUloge" Grid.Column="1"
+                                 Target="{Binding ElementName=IdTextBox}" />
+                        <TextBlock>Naziv:</TextBlock>
+                        <TextBox x:Name="NameTextBox"
+                     Text="{Binding Path=NazUloge}" 
+                     Width="250" />
+                        <csla:PropertyStatus Source="{Binding}" Property="NazUloge" Grid.Column="1"
+                                 Target="{Binding ElementName=NameTextBox}" />
+                        <Button 
+              Command="ApplicationCommands.Delete" 
+              CommandParameter="{Binding}"
+              CommandTarget="{Binding Source={StaticResource UlogeList}, Path=CommandManager, BindsDirectlyToSource=True}"
+              HorizontalAlignment="Left">Obriši</Button>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+        </Grid.Resources>
+
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Uloge:</TextBlock>
+                <csla:BusyAnimation Name="Busy" Height="20" Width="20" Margin="5"
+            IsRunning="{Binding Source={StaticResource UlogeList}, Path=IsBusy, BindsDirectlyToSource=True}" />
+            </StackPanel>
+            <ListBox Name="RolesListBox" 
+               ItemsSource="{Binding}"
+               ItemTemplate="{StaticResource lbTemplate}" />  
+            <StackPanel Orientation="Horizontal">
+                <Button 
+              Command="ApplicationCommands.Save" 
+              CommandTarget="{Binding Source={StaticResource UlogeList}, Path=CommandManager, BindsDirectlyToSource=True}"
+              HorizontalAlignment="Left" IsDefault="True">Spremi</Button>
+                <Button 
+              Command="ApplicationCommands.Undo" 
+              CommandTarget="{Binding Source={StaticResource UlogeList}, Path=CommandManager, BindsDirectlyToSource=True}"
+              HorizontalAlignment="Left" IsCancel="True">Odustani</Button>
+                <Button Name="AddItemButton"
+              Command="ApplicationCommands.New" 
+              CommandTarget="{Binding Source={StaticResource UlogeList}, Path=CommandManager, BindsDirectlyToSource=True}"
+              HorizontalAlignment="Left" IsCancel="True">Dodaj ulogu</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+
+    </ScrollViewer>
+
+</local:EditForm>

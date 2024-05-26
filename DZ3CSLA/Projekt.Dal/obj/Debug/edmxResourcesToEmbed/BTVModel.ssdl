@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BTVdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Assignment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Task" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="300" />
+    <Property Name="Start_date" Type="date" Nullable="false" />
+    <Property Name="End_date" Type="date" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID_Individual" Type="int" Nullable="false" />
+    <Property Name="ID_Worker" Type="int" Nullable="false" />
+    <Property Name="ID_Assigner" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cla_Phy">
+    <Key>
+      <PropertyRef Name="ID_Cla" />
+    </Key>
+    <Property Name="ID_Cla" Type="int" Nullable="false" />
+    <Property Name="ID_Phy" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Class_T">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Location" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fam_Ord">
+    <Key>
+      <PropertyRef Name="ID_Fam" />
+    </Key>
+    <Property Name="ID_Fam" Type="int" Nullable="false" />
+    <Property Name="ID_Ord" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Family_t">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Gen_Fam">
+    <Key>
+      <PropertyRef Name="ID_Gen" />
+    </Key>
+    <Property Name="ID_Gen" Type="int" Nullable="false" />
+    <Property Name="ID_Fam" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Genus_t">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Guest">
+    <Key>
+      <PropertyRef Name="Visit_date" />
+      <PropertyRef Name="ID_Person" />
+    </Key>
+    <Property Name="Visit_date" Type="date" Nullable="false" />
+    <Property Name="ID_Person" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Individual">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Notes" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Health" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="Location" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ID_Species" Type="int" Nullable="false" />
+    <Property Name="ID_Location" Type="int" Nullable="false" />
+    <Property Name="ID_Kingdom" Type="int" Nullable="false" />
+    <Property Name="ID_Sensor" Type="int" />
+  </EntityType>
+  <EntityType Name="Kingdom_t">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Polygon" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ord_Cla">
+    <Key>
+      <PropertyRef Name="ID_Ord" />
+    </Key>
+    <Property Name="ID_Ord" Type="int" Nullable="false" />
+    <Property Name="ID_Cla" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order_t">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" />
+    <Property Name="Surname" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Phy_Kin">
+    <Key>
+      <PropertyRef Name="ID_Phy" />
+    </Key>
+    <Property Name="ID_Phy" Type="int" Nullable="false" />
+    <Property Name="ID_Kin" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Phylum_t">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sensor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="Location" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Spe_Gen">
+    <Key>
+      <PropertyRef Name="ID_Spe" />
+    </Key>
+    <Property Name="ID_Spe" Type="int" Nullable="false" />
+    <Property Name="ID_Gen" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Species_t">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Care" Type="varchar" MaxLength="800" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Subdepartments">
+    <Key>
+      <PropertyRef Name="ID_Child" />
+    </Key>
+    <Property Name="ID_Parent" Type="int" Nullable="false" />
+    <Property Name="ID_Child" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sublocations">
+    <Key>
+      <PropertyRef Name="ID_Child" />
+    </Key>
+    <Property Name="ID_Parent" Type="int" Nullable="false" />
+    <Property Name="ID_Child" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Worker">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Hire_date" Type="date" Nullable="false" />
+    <Property Name="End_date" Type="date" />
+    <Property Name="ID_Person" Type="int" Nullable="false" />
+    <Property Name="ID_Department" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Assignmen__ID_As__6D0D32F4">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Assignment" Type="Self.Assignment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Assignment">
+        <PropertyRef Name="ID_Assigner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Assignmen__ID_In__6B24EA82">
+    <End Role="Individual" Type="Self.Individual" Multiplicity="1" />
+    <End Role="Assignment" Type="Self.Assignment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Individual">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Assignment">
+        <PropertyRef Name="ID_Individual" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Assignmen__ID_Wo__6C190EBB">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Assignment" Type="Self.Assignment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Assignment">
+        <PropertyRef Name="ID_Worker" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cla_Phy__ID_Cla__4CA06362">
+    <End Role="Class_T" Type="Self.Class_T" Multiplicity="1" />
+    <End Role="Cla_Phy" Type="Self.Cla_Phy" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Class_T">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cla_Phy">
+        <PropertyRef Name="ID_Cla" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cla_Phy__ID_Phy__4D94879B">
+    <End Role="Phylum_t" Type="Self.Phylum_t" Multiplicity="1" />
+    <End Role="Cla_Phy" Type="Self.Cla_Phy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phylum_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cla_Phy">
+        <PropertyRef Name="ID_Phy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Fam_Ord__ID_Fam__5441852A">
+    <End Role="Family_t" Type="Self.Family_t" Multiplicity="1" />
+    <End Role="Fam_Ord" Type="Self.Fam_Ord" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Family_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Fam_Ord">
+        <PropertyRef Name="ID_Fam" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Fam_Ord__ID_Ord__5535A963">
+    <End Role="Order_t" Type="Self.Order_t" Multiplicity="1" />
+    <End Role="Fam_Ord" Type="Self.Fam_Ord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Fam_Ord">
+        <PropertyRef Name="ID_Ord" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Gen_Fam__ID_Fam__59063A47">
+    <End Role="Family_t" Type="Self.Family_t" Multiplicity="1" />
+    <End Role="Gen_Fam" Type="Self.Gen_Fam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Family_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Gen_Fam">
+        <PropertyRef Name="ID_Fam" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Gen_Fam__ID_Gen__5812160E">
+    <End Role="Genus_t" Type="Self.Genus_t" Multiplicity="1" />
+    <End Role="Gen_Fam" Type="Self.Gen_Fam" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Genus_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Gen_Fam">
+        <PropertyRef Name="ID_Gen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Guest__ID_Person__3A81B327">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Guest" Type="Self.Guest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Guest">
+        <PropertyRef Name="ID_Person" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Individua__ID_Ki__6383C8BA">
+    <End Role="Kingdom_t" Type="Self.Kingdom_t" Multiplicity="1" />
+    <End Role="Individual" Type="Self.Individual" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kingdom_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Individual">
+        <PropertyRef Name="ID_Kingdom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Individua__ID_Lo__628FA481">
+    <End Role="Location" Type="Self.Location" Multiplicity="1" />
+    <End Role="Individual" Type="Self.Individual" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Individual">
+        <PropertyRef Name="ID_Location" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Individua__ID_Se__6477ECF3">
+    <End Role="Sensor" Type="Self.Sensor" Multiplicity="0..1" />
+    <End Role="Individual" Type="Self.Individual" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sensor">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Individual">
+        <PropertyRef Name="ID_Sensor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Individua__ID_Sp__619B8048">
+    <End Role="Species_t" Type="Self.Species_t" Multiplicity="1" />
+    <End Role="Individual" Type="Self.Individual" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Species_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Individual">
+        <PropertyRef Name="ID_Species" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ord_Cla__ID_Cla__5165187F">
+    <End Role="Class_T" Type="Self.Class_T" Multiplicity="1" />
+    <End Role="Ord_Cla" Type="Self.Ord_Cla" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class_T">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Ord_Cla">
+        <PropertyRef Name="ID_Cla" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ord_Cla__ID_Ord__5070F446">
+    <End Role="Order_t" Type="Self.Order_t" Multiplicity="1" />
+    <End Role="Ord_Cla" Type="Self.Ord_Cla" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Order_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Ord_Cla">
+        <PropertyRef Name="ID_Ord" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Phy_Kin__ID_Kin__49C3F6B7">
+    <End Role="Kingdom_t" Type="Self.Kingdom_t" Multiplicity="1" />
+    <End Role="Phy_Kin" Type="Self.Phy_Kin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kingdom_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Phy_Kin">
+        <PropertyRef Name="ID_Kin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Phy_Kin__ID_Phy__48CFD27E">
+    <End Role="Phylum_t" Type="Self.Phylum_t" Multiplicity="1" />
+    <End Role="Phy_Kin" Type="Self.Phy_Kin" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Phylum_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Phy_Kin">
+        <PropertyRef Name="ID_Phy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Spe_Gen__ID_Gen__5CD6CB2B">
+    <End Role="Genus_t" Type="Self.Genus_t" Multiplicity="1" />
+    <End Role="Spe_Gen" Type="Self.Spe_Gen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genus_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Spe_Gen">
+        <PropertyRef Name="ID_Gen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Spe_Gen__ID_Spe__5BE2A6F2">
+    <End Role="Species_t" Type="Self.Species_t" Multiplicity="1" />
+    <End Role="Spe_Gen" Type="Self.Spe_Gen" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Species_t">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Spe_Gen">
+        <PropertyRef Name="ID_Spe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Subdepart__ID_Ch__45F365D3">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="Subdepartments" Type="Self.Subdepartments" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Subdepartments">
+        <PropertyRef Name="ID_Child" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Subdepart__ID_Pa__44FF419A">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="Subdepartments" Type="Self.Subdepartments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Subdepartments">
+        <PropertyRef Name="ID_Parent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sublocati__ID_Ch__4222D4EF">
+    <End Role="Location" Type="Self.Location" Multiplicity="1" />
+    <End Role="Sublocations" Type="Self.Sublocations" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sublocations">
+        <PropertyRef Name="ID_Child" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sublocati__ID_Pa__412EB0B6">
+    <End Role="Location" Type="Self.Location" Multiplicity="1" />
+    <End Role="Sublocations" Type="Self.Sublocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sublocations">
+        <PropertyRef Name="ID_Parent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Worker__ID_Depar__68487DD7">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="Worker" Type="Self.Worker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Worker">
+        <PropertyRef Name="ID_Department" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Worker__ID_Perso__6754599E">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Worker" Type="Self.Worker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Worker">
+        <PropertyRef Name="ID_Person" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BTVdbModelStoreContainer">
+    <EntitySet Name="Assignment" EntityType="Self.Assignment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cla_Phy" EntityType="Self.Cla_Phy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Class_T" EntityType="Self.Class_T" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fam_Ord" EntityType="Self.Fam_Ord" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Family_t" EntityType="Self.Family_t" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gen_Fam" EntityType="Self.Gen_Fam" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Genus_t" EntityType="Self.Genus_t" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Guest" EntityType="Self.Guest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Individual" EntityType="Self.Individual" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kingdom_t" EntityType="Self.Kingdom_t" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Location" EntityType="Self.Location" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ord_Cla" EntityType="Self.Ord_Cla" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order_t" EntityType="Self.Order_t" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Phy_Kin" EntityType="Self.Phy_Kin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Phylum_t" EntityType="Self.Phylum_t" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sensor" EntityType="Self.Sensor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Spe_Gen" EntityType="Self.Spe_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Species_t" EntityType="Self.Species_t" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subdepartments" EntityType="Self.Subdepartments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sublocations" EntityType="Self.Sublocations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Worker" EntityType="Self.Worker" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Assignmen__ID_As__6D0D32F4" Association="Self.FK__Assignmen__ID_As__6D0D32F4">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Assignment" EntitySet="Assignment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Assignmen__ID_In__6B24EA82" Association="Self.FK__Assignmen__ID_In__6B24EA82">
+      <End Role="Individual" EntitySet="Individual" />
+      <End Role="Assignment" EntitySet="Assignment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Assignmen__ID_Wo__6C190EBB" Association="Self.FK__Assignmen__ID_Wo__6C190EBB">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Assignment" EntitySet="Assignment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cla_Phy__ID_Cla__4CA06362" Association="Self.FK__Cla_Phy__ID_Cla__4CA06362">
+      <End Role="Class_T" EntitySet="Class_T" />
+      <End Role="Cla_Phy" EntitySet="Cla_Phy" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cla_Phy__ID_Phy__4D94879B" Association="Self.FK__Cla_Phy__ID_Phy__4D94879B">
+      <End Role="Phylum_t" EntitySet="Phylum_t" />
+      <End Role="Cla_Phy" EntitySet="Cla_Phy" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Fam_Ord__ID_Fam__5441852A" Association="Self.FK__Fam_Ord__ID_Fam__5441852A">
+      <End Role="Family_t" EntitySet="Family_t" />
+      <End Role="Fam_Ord" EntitySet="Fam_Ord" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Fam_Ord__ID_Ord__5535A963" Association="Self.FK__Fam_Ord__ID_Ord__5535A963">
+      <End Role="Order_t" EntitySet="Order_t" />
+      <End Role="Fam_Ord" EntitySet="Fam_Ord" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Gen_Fam__ID_Fam__59063A47" Association="Self.FK__Gen_Fam__ID_Fam__59063A47">
+      <End Role="Family_t" EntitySet="Family_t" />
+      <End Role="Gen_Fam" EntitySet="Gen_Fam" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Gen_Fam__ID_Gen__5812160E" Association="Self.FK__Gen_Fam__ID_Gen__5812160E">
+      <End Role="Genus_t" EntitySet="Genus_t" />
+      <End Role="Gen_Fam" EntitySet="Gen_Fam" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Guest__ID_Person__3A81B327" Association="Self.FK__Guest__ID_Person__3A81B327">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Guest" EntitySet="Guest" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Individua__ID_Ki__6383C8BA" Association="Self.FK__Individua__ID_Ki__6383C8BA">
+      <End Role="Kingdom_t" EntitySet="Kingdom_t" />
+      <End Role="Individual" EntitySet="Individual" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Individua__ID_Lo__628FA481" Association="Self.FK__Individua__ID_Lo__628FA481">
+      <End Role="Location" EntitySet="Location" />
+      <End Role="Individual" EntitySet="Individual" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Individua__ID_Se__6477ECF3" Association="Self.FK__Individua__ID_Se__6477ECF3">
+      <End Role="Sensor" EntitySet="Sensor" />
+      <End Role="Individual" EntitySet="Individual" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Individua__ID_Sp__619B8048" Association="Self.FK__Individua__ID_Sp__619B8048">
+      <End Role="Species_t" EntitySet="Species_t" />
+      <End Role="Individual" EntitySet="Individual" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ord_Cla__ID_Cla__5165187F" Association="Self.FK__Ord_Cla__ID_Cla__5165187F">
+      <End Role="Class_T" EntitySet="Class_T" />
+      <End Role="Ord_Cla" EntitySet="Ord_Cla" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ord_Cla__ID_Ord__5070F446" Association="Self.FK__Ord_Cla__ID_Ord__5070F446">
+      <End Role="Order_t" EntitySet="Order_t" />
+      <End Role="Ord_Cla" EntitySet="Ord_Cla" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Phy_Kin__ID_Kin__49C3F6B7" Association="Self.FK__Phy_Kin__ID_Kin__49C3F6B7">
+      <End Role="Kingdom_t" EntitySet="Kingdom_t" />
+      <End Role="Phy_Kin" EntitySet="Phy_Kin" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Phy_Kin__ID_Phy__48CFD27E" Association="Self.FK__Phy_Kin__ID_Phy__48CFD27E">
+      <End Role="Phylum_t" EntitySet="Phylum_t" />
+      <End Role="Phy_Kin" EntitySet="Phy_Kin" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Spe_Gen__ID_Gen__5CD6CB2B" Association="Self.FK__Spe_Gen__ID_Gen__5CD6CB2B">
+      <End Role="Genus_t" EntitySet="Genus_t" />
+      <End Role="Spe_Gen" EntitySet="Spe_Gen" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Spe_Gen__ID_Spe__5BE2A6F2" Association="Self.FK__Spe_Gen__ID_Spe__5BE2A6F2">
+      <End Role="Species_t" EntitySet="Species_t" />
+      <End Role="Spe_Gen" EntitySet="Spe_Gen" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Subdepart__ID_Ch__45F365D3" Association="Self.FK__Subdepart__ID_Ch__45F365D3">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Subdepartments" EntitySet="Subdepartments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Subdepart__ID_Pa__44FF419A" Association="Self.FK__Subdepart__ID_Pa__44FF419A">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Subdepartments" EntitySet="Subdepartments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sublocati__ID_Ch__4222D4EF" Association="Self.FK__Sublocati__ID_Ch__4222D4EF">
+      <End Role="Location" EntitySet="Location" />
+      <End Role="Sublocations" EntitySet="Sublocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sublocati__ID_Pa__412EB0B6" Association="Self.FK__Sublocati__ID_Pa__412EB0B6">
+      <End Role="Location" EntitySet="Location" />
+      <End Role="Sublocations" EntitySet="Sublocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Worker__ID_Depar__68487DD7" Association="Self.FK__Worker__ID_Depar__68487DD7">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Worker" EntitySet="Worker" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Worker__ID_Perso__6754599E" Association="Self.FK__Worker__ID_Perso__6754599E">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Worker" EntitySet="Worker" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

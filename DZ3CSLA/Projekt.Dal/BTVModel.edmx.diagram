@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="63fc860a98394015a105070c9e879be7" Name="Diagram1">
+        <EntityTypeShape EntityType="BTVdbModel.Assignment" Width="1.5" PointX="9.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Class_T" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Department" Width="1.5" PointX="7.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Family_t" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Genus_t" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Guest" Width="1.5" PointX="9.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Individual" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Kingdom_t" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Location" Width="1.5" PointX="5.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Order_t" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Person" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Phylum_t" Width="1.5" PointX="10.5" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Sensor" Width="1.5" PointX="5.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Species_t" Width="1.5" PointX="5.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BTVdbModel.Worker" Width="1.5" PointX="12" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="BTVdbModel.FK__Assignmen__ID_As__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.FK__Assignmen__ID_In__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.FK__Assignmen__ID_Wo__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.FK__Worker__ID_Depar__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.FK__Guest__ID_Person__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.FK__Individua__ID_Ki__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.FK__Individua__ID_Lo__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.FK__Individua__ID_Se__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.FK__Individua__ID_Sp__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.FK__Worker__ID_Perso__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.Cla_Phy" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.Fam_Ord" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.Gen_Fam" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.Ord_Cla" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.Phy_Kin" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.Spe_Gen" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.Subdepartments" ManuallyRouted="false" />
+        <AssociationConnector Association="BTVdbModel.Sublocations" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,112 @@
+﻿<local:EditForm x:Class="UpravljanjeProjektima.OsobaEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:UpravljanjeProjektima"
+    xmlns:csla="clr-namespace:Csla.Wpf;assembly=Csla"  
+    xmlns:proj="clr-namespace:UpravljanjeProjektima;assembly=Projekt.Bll">
+    <local:EditForm.Resources>
+            <csla:IdentityConverter x:Key="IdentityConverter" />
+            <csla:CslaDataProvider x:Key="UlogeList"
+                           ObjectType="{x:Type proj:UlogaList}"
+                           FactoryMethod="Get"
+                           IsAsynchronous="False" />
+            <csla:CslaDataProvider x:Key="Osoba"
+                           ObjectType="{x:Type proj:Osoba}"
+                           FactoryMethod="Get"
+                           IsAsynchronous="False"
+                           IsInitialLoadEnabled="False"
+                           DataChanged="DataChanged"
+                           ManageObjectLifetime="True">
+            </csla:CslaDataProvider>
+            <csla:ObjectStatus x:Key="OsobaStatus"
+                       DataContext="{StaticResource Osoba}" />
+        </local:EditForm.Resources>
+        <UserControl.CommandBindings>
+            <CommandBinding Command="ApplicationCommands.Open"
+                    Executed="OpenCmdExecuted"
+                    CanExecute="OpenCmdCanExecute" />
+        </UserControl.CommandBindings>
+        <Grid Name="MainGrid" DataContext="{Binding Source={StaticResource Osoba}}" >
+            <Grid.Resources>
+                <DataTemplate x:Key="lbTemplate">
+                    <Grid>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Style="{StaticResource LinkButton}" 
+                    Margin="0" Width="200"
+                    Command="ApplicationCommands.Open"
+                    CommandParameter="{Binding Path = SifProjekta}"
+                    Content="{Binding Path = NazProjekta}" Foreground="Blue" />
+                            <TextBlock Text="{Binding Path = DatDodjeleUloge}" Width="100" />
+            <ComboBox 
+              ItemsSource="{Binding Source={StaticResource UlogeList}}" 
+              DisplayMemberPath="Value"
+              SelectedValuePath="Key"
+              SelectedValue="{Binding Path = IdUloge}" 
+              Width="150" />
+            <Button HorizontalAlignment="Left" 
+                    Command="ApplicationCommands.Delete" 
+                    CommandTarget="{Binding Source={StaticResource Osoba}, Path=CommandManager, BindsDirectlyToSource=True}"
+                    CommandParameter="{Binding}" 
+                    Content="Obriši"/>
+          </StackPanel>
+                    </Grid>
+                </DataTemplate>
+                <DataTemplate x:Key="lbroTemplate">
+                    <Grid>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Style="{StaticResource LinkButton}" 
+                    Margin="0" Width="200"
+                    Command="ApplicationCommands.Open"
+                    CommandParameter="{Binding Path=IdProjekta}"
+                    Content="{Binding Path=NazProjekta}" Foreground="Blue" />
+                            <TextBlock Text="{Binding Path=DatDodjeleUloge}" Width="100" />
+            <ComboBox 
+              ItemsSource="{Binding Source={StaticResource UlogeList}}" 
+              DisplayMemberPath="Value"
+              SelectedValuePath="Key"
+              SelectedValue="{Binding Path=IdUloge}" 
+              Width="150"
+              IsEnabled="False" />
+          </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </Grid.Resources>
+
+            <csla:Authorizer Name="AuthPanel">
+                <StackPanel FlowDirection="LeftToRight" Margin="0 0 20 0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource HeaderTextBlock}">Osoba</TextBlock>
+                        <csla:BusyAnimation Name="Busy" Height="20" Width="20" Margin="5"
+              IsRunning="{Binding Source={StaticResource Osoba}, Path=IsBusy, BindsDirectlyToSource=True}" />
+                    </StackPanel>
+                    <TextBlock>Id:</TextBlock>
+                    <TextBlock Text="{Binding IdOsobe, Mode=OneWay}"></TextBlock>
+                    <TextBlock>Ime:</TextBlock>
+                    <TextBox Text="{Binding ImeOsobe, Converter={StaticResource IdentityConverter}, ValidatesOnDataErrors=True}"></TextBox>
+                    <TextBlock>Prezime:</TextBlock>
+                    <TextBox Text="{Binding PrezimeOsobe, Converter={StaticResource IdentityConverter}, ValidatesOnDataErrors=True}"></TextBox>
+                    <TextBlock>OIB:</TextBlock>
+                    <TextBox Text="{Binding OIB, Converter={StaticResource IdentityConverter}, ValidatesOnDataErrors=True}"></TextBox>
+
+                <TextBlock>Projekti:</TextBlock>
+                    <ListBox Name="ProjektListBox" 
+                 ItemsSource="{Binding ProjektiOsobe}" 
+                 ItemTemplate="{StaticResource lbTemplate}" />
+                    <StackPanel Orientation="Horizontal">
+                        <Button 
+              Command="ApplicationCommands.Save" 
+              CommandTarget="{Binding Source={StaticResource Osoba}, Path=CommandManager, BindsDirectlyToSource=True}"
+              HorizontalAlignment="Left" IsDefault="True">Spremi</Button>
+                        <Button 
+              Command="ApplicationCommands.Undo" 
+              CommandTarget="{Binding Source={StaticResource Osoba}, Path=CommandManager, BindsDirectlyToSource=True}"
+              HorizontalAlignment="Left" IsCancel="True">Odustani</Button>
+                        <Button IsEnabled="{Binding Source={StaticResource OsobaStatus}, Path=CanEditObject}" 
+                  Click="Pridruzi"
+                  HorizontalAlignment="Left">Dodaj</Button>
+                </StackPanel>
+                </StackPanel>
+            </csla:Authorizer>
+        </Grid>
+    </local:EditForm>
+

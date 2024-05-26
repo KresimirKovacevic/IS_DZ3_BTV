@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BTVdbModelStoreContainer" CdmEntityContainer="BTVDataContext">
+    <EntitySetMapping Name="Assignments">
+      <EntityTypeMapping TypeName="BTVdbModel.Assignment">
+        <MappingFragment StoreEntitySet="Assignment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Task" ColumnName="Task" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Start_date" ColumnName="Start_date" />
+          <ScalarProperty Name="End_date" ColumnName="End_date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ID_Individual" ColumnName="ID_Individual" />
+          <ScalarProperty Name="ID_Worker" ColumnName="ID_Worker" />
+          <ScalarProperty Name="ID_Assigner" ColumnName="ID_Assigner" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Class_T">
+      <EntityTypeMapping TypeName="BTVdbModel.Class_T">
+        <MappingFragment StoreEntitySet="Class_T">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="BTVdbModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Family_t">
+      <EntityTypeMapping TypeName="BTVdbModel.Family_t">
+        <MappingFragment StoreEntitySet="Family_t">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genus_t">
+      <EntityTypeMapping TypeName="BTVdbModel.Genus_t">
+        <MappingFragment StoreEntitySet="Genus_t">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guests">
+      <EntityTypeMapping TypeName="BTVdbModel.Guest">
+        <MappingFragment StoreEntitySet="Guest">
+          <ScalarProperty Name="Visit_date" ColumnName="Visit_date" />
+          <ScalarProperty Name="ID_Person" ColumnName="ID_Person" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Individuals">
+      <EntityTypeMapping TypeName="BTVdbModel.Individual">
+        <MappingFragment StoreEntitySet="Individual">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Health" ColumnName="Health" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="ID_Species" ColumnName="ID_Species" />
+          <ScalarProperty Name="ID_Location" ColumnName="ID_Location" />
+          <ScalarProperty Name="ID_Kingdom" ColumnName="ID_Kingdom" />
+          <ScalarProperty Name="ID_Sensor" ColumnName="ID_Sensor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kingdom_t">
+      <EntityTypeMapping TypeName="BTVdbModel.Kingdom_t">
+        <MappingFragment StoreEntitySet="Kingdom_t">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="BTVdbModel.Location">
+        <MappingFragment StoreEntitySet="Location">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Polygon" ColumnName="Polygon" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_t">
+      <EntityTypeMapping TypeName="BTVdbModel.Order_t">
+        <MappingFragment StoreEntitySet="Order_t">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="BTVdbModel.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Phylum_t">
+      <EntityTypeMapping TypeName="BTVdbModel.Phylum_t">
+        <MappingFragment StoreEntitySet="Phylum_t">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sensors">
+      <EntityTypeMapping TypeName="BTVdbModel.Sensor">
+        <MappingFragment StoreEntitySet="Sensor">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Species_t">
+      <EntityTypeMapping TypeName="BTVdbModel.Species_t">
+        <MappingFragment StoreEntitySet="Species_t">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Care" ColumnName="Care" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workers">
+      <EntityTypeMapping TypeName="BTVdbModel.Worker">
+        <MappingFragment StoreEntitySet="Worker">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Hire_date" ColumnName="Hire_date" />
+          <ScalarProperty Name="End_date" ColumnName="End_date" />
+          <ScalarProperty Name="ID_Person" ColumnName="ID_Person" />
+          <ScalarProperty Name="ID_Department" ColumnName="ID_Department" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Cla_Phy" TypeName="BTVdbModel.Cla_Phy" StoreEntitySet="Cla_Phy">
+      <EndProperty Name="Class_T">
+        <ScalarProperty Name="ID" ColumnName="ID_Cla" />
+      </EndProperty>
+      <EndProperty Name="Phylum_t">
+        <ScalarProperty Name="ID" ColumnName="ID_Phy" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Fam_Ord" TypeName="BTVdbModel.Fam_Ord" StoreEntitySet="Fam_Ord">
+      <EndProperty Name="Family_t">
+        <ScalarProperty Name="ID" ColumnName="ID_Fam" />
+      </EndProperty>
+      <EndProperty Name="Order_t">
+        <ScalarProperty Name="ID" ColumnName="ID_Ord" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Gen_Fam" TypeName="BTVdbModel.Gen_Fam" StoreEntitySet="Gen_Fam">
+      <EndProperty Name="Family_t">
+        <ScalarProperty Name="ID" ColumnName="ID_Fam" />
+      </EndProperty>
+      <EndProperty Name="Genus_t">
+        <ScalarProperty Name="ID" ColumnName="ID_Gen" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Ord_Cla" TypeName="BTVdbModel.Ord_Cla" StoreEntitySet="Ord_Cla">
+      <EndProperty Name="Class_T">
+        <ScalarProperty Name="ID" ColumnName="ID_Cla" />
+      </EndProperty>
+      <EndProperty Name="Order_t">
+        <ScalarProperty Name="ID" ColumnName="ID_Ord" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Phy_Kin" TypeName="BTVdbModel.Phy_Kin" StoreEntitySet="Phy_Kin">
+      <EndProperty Name="Kingdom_t">
+        <ScalarProperty Name="ID" ColumnName="ID_Kin" />
+      </EndProperty>
+      <EndProperty Name="Phylum_t">
+        <ScalarProperty Name="ID" ColumnName="ID_Phy" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Spe_Gen" TypeName="BTVdbModel.Spe_Gen" StoreEntitySet="Spe_Gen">
+      <EndProperty Name="Genus_t">
+        <ScalarProperty Name="ID" ColumnName="ID_Gen" />
+      </EndProperty>
+      <EndProperty Name="Species_t">
+        <ScalarProperty Name="ID" ColumnName="ID_Spe" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Subdepartments" TypeName="BTVdbModel.Subdepartments" StoreEntitySet="Subdepartments">
+      <EndProperty Name="Department">
+        <ScalarProperty Name="ID" ColumnName="ID_Child" />
+      </EndProperty>
+      <EndProperty Name="Department1">
+        <ScalarProperty Name="ID" ColumnName="ID_Parent" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Sublocations" TypeName="BTVdbModel.Sublocations" StoreEntitySet="Sublocations">
+      <EndProperty Name="Location">
+        <ScalarProperty Name="ID" ColumnName="ID_Child" />
+      </EndProperty>
+      <EndProperty Name="Location1">
+        <ScalarProperty Name="ID" ColumnName="ID_Parent" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

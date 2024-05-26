@@ -1,0 +1,55 @@
+﻿@model UpravljanjeProjektima.Projekt
+
+@{
+	ViewBag.Title = Model.SifProjekta + " - " + Model.NazProjekta;
+  // prikaz projekta i detalja
+}
+
+<div class="noviPodatak">
+		<table>
+			<tbody>
+				<tr>
+					<td>Šifra projekta</td>
+					<td>@Model.SifProjekta</td>
+				</tr>
+				<tr>
+					<td>Naziv projekta</td>
+					<td>@Model.NazProjekta</td>
+				</tr>
+				<tr>
+					<td>Datum početka</td>
+					<td>@(Model.DatPocetka.HasValue ? Model.DatPocetka.Value.ToString("d.M.yyyy.") : "")</td>
+				</tr>
+				<tr>
+					<td>Datum završetka</td>
+					<td>@(Model.DatZavrsetka.HasValue ? Model.DatZavrsetka.Value.ToString("d.M.yyyy.") : "")</td>
+				</tr>
+				<tr>
+					<td>Opis projekta</td>					
+					<td>@Html.TextAreaFor(p => p.OpisProjekta, new { disabled = true })</td>
+				</tr>
+				<tr>
+				<td>
+					@Html.ActionLink("Ažuriraj", "Edit", new { SifProjekta = Model.SifProjekta })
+				</td>
+				<td>
+					@using (Html.BeginForm("Delete", "Projekt", new { SifProjekta = Model.SifProjekta }))
+		 {
+									<a class="delete">Obriši</a>            
+		 }
+					</td>				
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+<p>
+@Html.ActionLink("Dodaj sudionika", "Select", "Osoba", new { SifProjekta = Model.SifProjekta }, null)
+</p>
+
+@{
+	if (Model.SudioniciProjekta.Count > 0)
+	{
+		Html.RenderPartial("Osobe", Model.SudioniciProjekta, new ViewDataDictionary() { { "SifProjekta", Model.SifProjekta } });
+	}
+}

@@ -1,0 +1,127 @@
+USE [BTVdb]
+GO
+
+INSERT INTO Kingdom_t (Name) VALUES ('Plantae');
+INSERT INTO Kingdom_t (Name) VALUES ('Animalia');
+INSERT INTO Kingdom_t (Name) VALUES ('Fungi');
+
+INSERT INTO Phylum_t (Name) VALUES ('Basidiomycota');
+INSERT INTO Phylum_t (Name) VALUES ('Spermatophytes');
+INSERT INTO Phylum_t (Name) VALUES ('Chordata');
+
+INSERT INTO Phy_Kin (ID_Phy, ID_Kin) VALUES (1,3);
+INSERT INTO Phy_Kin (ID_Phy, ID_Kin) VALUES (2,1);
+INSERT INTO Phy_Kin (ID_Phy, ID_Kin) VALUES (3,2);
+
+INSERT INTO Class_t (Name) VALUES ('Agaricales');
+INSERT INTO Class_t (Name) VALUES ('Dicotyledons');
+INSERT INTO Class_t (Name) VALUES ('Amphibia');
+
+INSERT INTO Cla_Phy (ID_Cla, ID_Phy) VALUES (3,3);
+INSERT INTO Cla_Phy (ID_Cla, ID_Phy) VALUES (1,1);
+INSERT INTO Cla_Phy (ID_Cla, ID_Phy) VALUES (2,2);
+
+INSERT INTO Order_t (Name) VALUES ('Agaricales');
+INSERT INTO Order_t (Name) VALUES ('Fagales');
+INSERT INTO Order_t (Name) VALUES ('Rosales');
+INSERT INTO Order_t (Name) VALUES ('Anura');
+
+INSERT INTO Ord_Cla (ID_Ord, ID_Cla) VALUES (1,1);
+INSERT INTO Ord_Cla (ID_Ord, ID_Cla) VALUES (2,2);
+INSERT INTO Ord_Cla (ID_Ord, ID_Cla) VALUES (3,2);
+INSERT INTO Ord_Cla (ID_Ord, ID_Cla) VALUES (4,3);
+
+INSERT INTO Family_t (Name) VALUES ('Omphalotaceae');
+INSERT INTO Family_t (Name) VALUES ('Betulaceae');
+INSERT INTO Family_t (Name) VALUES ('Rosaceae');
+INSERT INTO Family_t (Name) VALUES ('Bufonidae');
+
+INSERT INTO Fam_Ord (ID_Fam, ID_Ord) VALUES (1,1);
+INSERT INTO Fam_Ord (ID_Fam, ID_Ord) VALUES (2,2);
+INSERT INTO Fam_Ord (ID_Fam, ID_Ord) VALUES (3,3);
+INSERT INTO Fam_Ord (ID_Fam, ID_Ord) VALUES (4,4);
+
+INSERT INTO Genus_t (Name) VALUES ('Lentinula');
+INSERT INTO Genus_t (Name) VALUES ('Betula');
+INSERT INTO Genus_t (Name) VALUES ('Rosa');
+INSERT INTO Genus_t (Name) VALUES ('Bufo');
+INSERT INTO Genus_t (Name) VALUES ('Malus');
+
+INSERT INTO Gen_Fam (ID_Gen, ID_Fam) VALUES (1,1);
+INSERT INTO Gen_Fam (ID_Gen, ID_Fam) VALUES (2,2);
+INSERT INTO Gen_Fam (ID_Gen, ID_Fam) VALUES (3,3);
+INSERT INTO Gen_Fam (ID_Gen, ID_Fam) VALUES (4,4);
+INSERT INTO Gen_Fam (ID_Gen, ID_Fam) VALUES (5,3);
+
+INSERT INTO Species_t (Name, Description, Care) VALUES ('Lentinula edodes', 'Shiitake mushroom', 'MIN_TEMP:10,MAX_TEMP:30');
+INSERT INTO Species_t (Name, Description, Care) VALUES ('Betula pendula', 'European birch tree', 'MIN_TEMP:-10,MAX_TEMP:40,WATER:MED');
+INSERT INTO Species_t (Name, Description, Care) VALUES ('Rosa rubiginosa', 'Sweet briar', 'MIN_TEMP:10,MAX_TEMP:30,WATER:MED,SHADE:MED');
+INSERT INTO Species_t (Name, Description, Care) VALUES ('Bufo bufo', 'Common toad', 'AMPHIBIOUS,HIBERNATION:WIN,FOOD:INSECTS_A,BR_SEASON:SPR');
+INSERT INTO Species_t (Name, Description, Care) VALUES ('Malus domestica', 'Apple', 'MIN_TEMP:10,MAX_TEMP:30,WATER:MED,SHADE:MED,BLOOM:SPR,HARVEST:SUM:AUT');
+
+INSERT INTO Spe_Gen (ID_Spe, ID_Gen) VALUES (1,1);
+INSERT INTO Spe_Gen (ID_Spe, ID_Gen) VALUES (2,2);
+INSERT INTO Spe_Gen (ID_Spe, ID_Gen) VALUES (3,3);
+INSERT INTO Spe_Gen (ID_Spe, ID_Gen) VALUES (4,4);
+INSERT INTO Spe_Gen (ID_Spe, ID_Gen) VALUES (5,5);
+
+INSERT INTO Department (Name, Location) VALUES ('Department of Botany','-42.1:1.2');
+INSERT INTO Department (Name, Location) VALUES ('Department for the Conservation of Endangered Plants','-2.5:21.2');
+INSERT INTO Department (Name, Location) VALUES ('Department for Research of Endangered Plants','-22.0:21.2');
+INSERT INTO Department (Name, Location) VALUES ('Department of Waste Management','82.7:90.0');
+INSERT INTO Department (Name, Location) VALUES ('Department of Informational Technology','-65.6:-40.2');
+INSERT INTO Department (Name, Location) VALUES ('Department of Technical Support','-70.0:-39.9');
+INSERT INTO Department (Name, Location) VALUES ('Department of Plant Health Care','-2.6:41.1');
+INSERT INTO Department (Name, Location) VALUES ('Department of Human Resources','78.9:60.3');
+INSERT INTO Department (Name, Location) VALUES ('Human Resources Administration','80.1:58.8');
+
+INSERT INTO Subdepartments (ID_Parent, ID_Child) VALUES (1,2);
+INSERT INTO Subdepartments (ID_Parent, ID_Child) VALUES (2,3);
+INSERT INTO Subdepartments (ID_Parent, ID_Child) VALUES (5,6);
+INSERT INTO Subdepartments (ID_Parent, ID_Child) VALUES (1,7);
+INSERT INTO Subdepartments (ID_Parent, ID_Child) VALUES (8,9);
+
+INSERT INTO Sensor (Type, Location) VALUES ('T','10.3:11.1');
+INSERT INTO Sensor (Type, Location) VALUES ('T','40.7:71.3');
+INSERT INTO Sensor (Type, Location) VALUES ('M','-22.6:11.2');
+INSERT INTO Sensor (Type, Location) VALUES ('H','-85.0:85');
+
+INSERT INTO Location (Name, Polygon) VALUES ('Park Grounds', '-100.0:100.0,100.0:100.0,100.0:-100.0,-100.0:100.0');
+INSERT INTO Location (Name, Polygon) VALUES ('Great Lake', '-90.0:90.0,-80.0:98.0,-75.0:80.0,-80.0:80.0,-85.0:85.0');
+INSERT INTO Location (Name, Polygon) VALUES ('Old Storage', '99.0:-99.0,95.0:-99.0,99.0:-95.0');
+INSERT INTO Location (Name, Polygon) VALUES ('Tree Garden', '80.0:80.0,-10.0:80.0,-10.0:60.0,80.0:60.0');
+
+INSERT INTO Sublocations (ID_Parent, ID_Child) VALUES (1,2);
+INSERT INTO Sublocations (ID_Parent, ID_Child) VALUES (1,3);
+INSERT INTO Sublocations (ID_Parent, ID_Child) VALUES (1,4);
+
+INSERT INTO Person (Name, Surname) VALUES ('Test', 'Person');
+INSERT INTO Person (Name, Surname) VALUES ('John', 'Smith');
+INSERT INTO Person (Name, Surname) VALUES ('Mary', 'Jane');
+INSERT INTO Person (Name, Surname) VALUES ('Billy', 'Bob');
+INSERT INTO Person (Name, Surname) VALUES ('Paul', 'Kennedy');
+INSERT INTO Person (Name, Surname) VALUES ('Ringo', 'Denver');
+
+INSERT INTO Worker (ID_Person, ID_Department, Role, Hire_date) VALUES (2, 9, 'ADMIN', '2024-04-01');
+INSERT INTO Worker (ID_Person, ID_Department, Role, Hire_date, End_date) VALUES (3, 8, 'SCHEDULING', '2024-02-14', '2024-04-14');
+INSERT INTO Worker (ID_Person, ID_Department, Role, Hire_date) VALUES (5, 5, 'SYSTEAM ADMIN', '2024-03-01');
+INSERT INTO Worker (ID_Person, ID_Department, Role, Hire_date, End_date) VALUES (5, 6, 'TECH SUPPORT', '2024-03-01', '2024-04-01');
+INSERT INTO Worker (ID_Person, ID_Department, Role, Hire_date) VALUES (6, 7, 'PLAN CARE', '2024-03-30');
+INSERT INTO Worker (ID_Person, ID_Department, Role, Hire_date, End_date) VALUES (3, 1, 'PALNT CARE', '2024-02-01', '2024-02-14');
+
+INSERT INTO Individual (ID_Species, ID_Location, ID_Kingdom, Notes, Health, Location) VALUES (1, 2, 3, 'Located on a stump', 'OK!', '-89.0:89.0');
+INSERT INTO Individual (ID_Species, ID_Location, ID_Kingdom, Notes, Health, Location) VALUES (4, 2, 2, 'Adult male', 'OKM', '-80.0:80.0');
+INSERT INTO Individual (ID_Species, ID_Location, ID_Kingdom, Notes, Health, Location) VALUES (4, 2, 2, 'Adult female', 'OKF', '-80.0:80.0');
+INSERT INTO Individual (ID_Species, ID_Location, ID_Kingdom, Notes, Health, Location, ID_Sensor) VALUES (3, 1, 1, 'In the grass', 'OK!', '10.0:10.0', 1);
+INSERT INTO Individual (ID_Species, ID_Location, ID_Kingdom, Notes, Health, Location, ID_Sensor) VALUES (2, 4, 1, 'Since 1966', 'ILL', '70.0:70.0', 4);
+INSERT INTO Individual (ID_Species, ID_Location, ID_Kingdom, Notes, Health, Location, ID_Sensor) VALUES (5, 4, 1, 'Since 1971', 'OK!', '70.0:0.0', 4);
+
+INSERT INTO Assignment (ID_Worker, ID_Assigner, ID_Individual, Task, Description, Start_date, End_date, Status) VALUES (3, 2, 1, 'Test Task 1', 'Test for successful task.', '2024-02-01', '2025-02-01', 'SUCCESS');
+INSERT INTO Assignment (ID_Worker, ID_Assigner, ID_Individual, Task, Description, Start_date, End_date, Status) VALUES (3, 2, 1, 'Test Task 2', 'Test for failed task.', '2024-02-01', '2024-02-04', 'FAILURE');
+INSERT INTO Assignment (ID_Worker, ID_Assigner, ID_Individual, Task, Description, Start_date, End_date, Status) VALUES (6, 2, 3, 'Female frog feeding', 'Female common toad needs aditional nutrition for breeding season.', '2024-04-09', '2024-04-16', 'UPDATE');
+INSERT INTO Assignment (ID_Worker, ID_Assigner, ID_Individual, Task, Description, Start_date, End_date, Status) VALUES (6, 2, 2, 'Birch tree illness', 'Birch tree has a currently unknown illness.', '2024-04-12', '2025-04-15', 'NEW');
+
+INSERT INTO Guest (Visit_date, ID_Person) VALUES ('2024-03-01', 1);
+INSERT INTO Guest (Visit_date, ID_Person) VALUES ('2024-03-01', 4);
+INSERT INTO Guest (Visit_date, ID_Person) VALUES ('2024-03-26', 1);
+INSERT INTO Guest (Visit_date, ID_Person) VALUES ('2024-04-01', 4);
